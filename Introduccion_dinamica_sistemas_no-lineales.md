@@ -23,17 +23,17 @@ José Antonio Vacas Martínez @javacasm
 
 
 INDICE: 
-1. [INTRODUCCION](./Introduccion_dinamica_sistemas_no-lineales.md/README.md#introducci%C3%B3n)
-1. ¿QUE ES EL CAOS?
-1. ECUACION LOGISTICA
-1. ATRACTORES
-1. ¿CAOS?
-1. RESUMIENDO
-1. UNIVERSALIDAD 
-1. CAOS Y ERGODICIDAD. Teorema KAM
-1. CAOS CUANTICO
-APÉNDICE A: FRACTALES
-APÉNDICE B: ATRACTOR DE LORENZ 
+1. [INTRODUCCION](./Introduccion_dinamica_sistemas_no-lineales.md#introducci%C3%B3n)
+1. [¿QUE ES EL CAOS?](./Introduccion_dinamica_sistemas_no-lineales.md#qu%C3%A9-es-el-caos)
+1. [ECUACION LOGISTICA](./Introduccion_dinamica_sistemas_no-lineales.md#ecuaci%C3%B3n-log%C3%ADstica)
+1. [ATRACTORES](./Introduccion_dinamica_sistemas_no-lineales.md#atractores)
+1. [¿CAOS?](./Introduccion_dinamica_sistemas_no-lineales.md#caos)
+1. [RESUMIENDO...](./Introduccion_dinamica_sistemas_no-lineales.md#resumiendo)
+1. [UNIVERSALIDAD](./Introduccion_dinamica_sistemas_no-lineales.md#universalidad)
+1. [CAOS Y ERGODICIDAD. Teorema KAM](./Introduccion_dinamica_sistemas_no-lineales.md#caos-y-ergodicidad-teorema-kam)
+1. [CAOS CUANTICO](./Introduccion_dinamica_sistemas_no-lineales.md#caos-cu%C3%A1ntico)
+[APÉNDICE A: FRACTALES](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-a-fractales)
+[APÉNDICE B: ATRACTOR DE LORENZ](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-b-atractor-de-lorenz)
 BIBLIOGRAFIA
 
 ## Introducción
@@ -501,6 +501,7 @@ Podemos explicar el que los sistemas de más dimensiones se comporten como unidi
 Un estupendo resultado de la universalidad es que no importa lo cerca que nuestras ecuaciones estén de las reales. Mientras que el modelo esté en la misma clase de universalidad (tenga una misma forma de desarrollo en la f(x) que nos da la evolución) que el sistema real ambos tendrán una misma sucesión de duplicaciones de período. Esto significa que podemos obtener la física correcta de modelos muy simples. Pero por supuesto, no sabemos cuando dos sistemas están en la misma clase de universalidad. 
 
 Mirando el espacio de las fases vemos que las trayectorias se mueven en una zona restringida del espacio de las fases. Para trabajar con ciclos límite es más cómodo expresar cada punto como función del anterior, Xn+1=f(x.). No sabemos la expresión explícita de f(x) pero sí que tiene que caer en los extremos, es decir que va a tener un máximo en un punto interior del intervalo xc. Podemos desarrollarla alrededor de este máximo en la forma: 
+
 - 33 - 
 
 f(x)=2, +az(x-x)2 +... 
@@ -512,7 +513,9 @@ Como vimos tendremos bifurcación cuando la derivada de f(x) en el punto se haga
 Nuestro argumento no depende para nada de la forma explícita de f(x): aquí tenemos la universalidad de las duplicaciones de período. 
 
 Pero esta universalidad no es sólo cualitativa. Para estudiar la estabilidad de un punto fijo hacemos un reescalado de su entorno. El entorno de éstos puntos queda prácticamente igual después de una iteración y un reescalado. Tras haber ampliado muchas veces los entornos, casi toda la información sobre la forma global de f(x) ha desaparecido. Nos queda una función universal g(x). Esta función se autoreproduce después de una iteración y un reescalado 
+
 860)=-as 81-) 
+
 lo que nos permite determinar a. 
 
 Resumiendo. Tenemos un sistema multidimensional. La sección de Poincaré nos permite pasar del estudio de un sistema de ecuaciones diferenciales al estudio de iteraciones discretas. La disipación reduce la dimensión hasta dejar al sistema como unidimensional. Las sucesiones de bifurcaciones tienen lugar a escalas cada vez menores. Después de n bifurcaciones la separación entre las trayectorias será de a" y prácticamente no queda nada de la estructura global del sistema. Tenemos aquí la universalidad. 
@@ -523,108 +526,199 @@ Resumiendo. Tenemos un sistema multidimensional. La sección de Poincaré nos pe
 
 Nada hay que preocupe más a un físico dedicado a hacer mecánica estadística, que saber si su sistema tiene comportamiento ergódico o no. 
 La mecánica estadística trata, aprovechando la enorme cantidad de partículas que forman un sistema real, de promediando, obtener información macroscópica sobre el sistema global. Esto equivale a decir que aprovechamos la gran cantidad de microestados compatibles con un macroestado para encontrar información útil sobre este último. 
+
 Queremos, entonces, hacer promedios sobre los microestados en los que se encuentra el sistema. Para ello debemos saber cuales son éstos. Al conjunto de los estados posibles lo llamaremos espacio accesible y es donde promediaremos la función dinámica. 
+
 Otra forma de promediar sería sobre el valor que va tomando la función a lo largo del tiempo. Físicamente podemos justificar esto pues nuestras medidas nunca son instantáneas y necesitamos un tiempo finito para hacerlas. Suponemos que durante este tiempo el movimiento microscópico del sistema es tal que nos permite afirmar que la trayectoria ha pasado por casi todos los microestados accesibles con igual probabilidad. Es la hipótesis ergódica. Así el promedio temporal y el promedio sobre el espacio accesible coincidirán. 
+
 Dado un sistema y para aplicarle el formalismo de la mecánica estadística con toda tranquilidad necesitamos saber si su comportamiento es o no ergódico. 
+
 - 35 - 
+
 Sólo se ha demostrado este tipo de comportamiento para una clase de sistemas, una colección de esferas duras en una caja. Sin embargo la mayoría de todos los otros sistemas tienen un comportamiento mezcla de coherente y caótico. 
+
 Veremos que sistemas de muy pocos grados de libertad (dos para ser mas exactos) pueden pasar de un comportamiento totalmente determinista a otro caótico, dependiendo la transición de un parámetro de control en el hamiltoniano del sistema. 
+
 Podemos entender la transición de un tipo de comportamiento a otro con la ayuda del Teorema KAM formulado por Kolmogorov, Arnold y Moser. 
+
 Tenemos un sistema integrable (es decir con el suficiente número de constantes del movimiento) de 2N grados de libertad, su espacio accesible en el espacio de las fases estará restringido a un superficie de dimensión N. Si ahora perturbamos el sistema aunque sea con una perturbación débil, podemos pensar que estas superficies serán destruidas, que la perturbación introduce algo patológico en el sistema o bien que sólo las deformará levemente. El Teorema KAM nos dice que las dos afirmaciones tienen su parte de verdad. Originariamente fue formulado en términos avanzados de topología, análisis y teoría de números, aquí lo formularemos de un modo más intuitivo: 
+
 "Sea H=H.+2H, el hamiltoniano de un sistema. Con tal que a sea suficientemente pequeña, el espacio de las fases queda dividido en dos regiones de volumen no nulo (en el sentido de medida de Lebesgue), una de 
 Fue formulado por Kolmogorov en 1954, pero se perdió su demostración. En 1963 Amold y Moser independientemente lo volvieron a demostrar. 
+
 - 36 
+
 las cuales es pequeña comparada con la otra y se encoge hasta medir cero cuando a tiende a anularse. La región mayor tiene la estructura de las superficies de H. pero recubiertas con trayectorias densas." 
+
 O sea, para perturbaciones pequeñas la mayoría de las condiciones iniciales producen movimiento regular y las trayectorias están restringidas a la superficie. La superficie del hamiltoniano Ho es solo levemente distorsionada. Sin embargo hay una pequeña región (un conjunto de condiciones iniciales) en la que el sistema presenta comportamiento errático. Y esta región es de medida no nula. Tenemos comportamiento caótico introducido patológicamente en el sistema dentro del toroide. Incluso se conjetura que el movimiento sea ergódico. 
-La mayoría de los movimientos periódicos con frecuencias inconmensurables continúan existiendo dentro del toroide sólo débilmente perturbados. Los de frecuencias conmensurables (o inconmensurables con una razón t/s cercana a un número racional con r y s pequeños) son grandemente perturbados y no permanecen en el toroide, dando lugar a movimiento estocástico o caótico 
+
+La mayoría de los movimientos periódicos con frecuencias inconmensurables continúan existiendo dentro del toroide sólo débilmente perturbados. Los de frecuencias conmensurables (o inconmensurables con una razón t/s cercana a un número racional con r y s pequeños) son grandemente perturbados y no permanecen en el toroide, dando lugar a movimiento estocástico o caótico. 
+
 La perturbación va a introducir pequeñas zonas de resonancia en las cuales el sistema tendrá comportamiento caótico. A medida que la perturbación aumente las superficies se van destruyendo cerca de estas zonas. Cuando dos zonas vecinas se solapan, la superficie es completamente destruida y la trayectoria del sistema 
+
 Tenemos una situación idéntica en la distribución de los asteroides en el sistema solar. Fue estudiado por Wisdom. Sus órbitas son perturbadas por Júpiter. Si estudiamos su distribución frente a la razón de la frecuencia angular del asteroide y la de Júpiter, encontramos que para razones racionales o cercanas no hay asteroides y sí para las irracionales. 
 - 37 - 
 puede vagar por las dos libremente. Si seguimos aumentado la perturbación llegarán a solaparse todas las zonas de resonancia y la región entera se volverá caótica. 
+
 En un comportamiento determinista tenemos al sistema confinado en unas órbitas determinadas. En la transición a uno caótico estas órbitas empiezan a deformarse hasta llegar a llenar el espacio accesible. Si las órbitas llegaran a llenarlo completamente, podríamos tener comportamiento ergódico en el sistema. 
+
 Para un astrónomo este resultado es estupendo. La perturbación de Plutón no va a hacer que la Tierra abandone su órbita. Su trabajo se reduce. Pero un físico interesado por la mecánica estadística hubiera preferido que el comportamiento del sistema se volviera caótico y que llenara el espacio de las fases accesibles, por lo que todos sus promedios temporales se verían justificados. 
+
 Podemos recurrir al as que todos los físicos estadísticos tienen en la manga: dado el gran numero de grados de libertad de nuestros sistemas, las resonancias aparecen a montones y nuestro sistemas será ergódico. 
-Vamos ver todo esto con cuentas. 
+
+Vamos ver todo esto "con cuentas". 
+
 Tenemos un sistema de dos grados de libertad. En variables acción y ángulo. 
+
 H=H,0,1)) + VJ/2,41,42) 
 OH, 
+
 Si V=0 J;=cte y 
+
 a 
+
 Recordemos que la estabilidad del sistema solar un problema sin resolver aún. 
+
 - 38 - 
+
 Podemos representar esto gráficamente como un toroide de dos dimensiones con radios J; y donde o representa la variable angular. 
+
 Desarrollando por Fourier 
-H=H.(11/2) +fm (1) cos(mo, +nop) + ... Buscamos una transformación infinitesimal que nos elimine la dependencia angular. Encontramos que nos puede servir ésta: 
+
+H=H.(11/2) +fm (1) cos(mo, +nop) + ... 
+
+
+Buscamos una transformación infinitesimal que nos elimine la dependencia angular. Encontramos que nos puede servir ésta: 
+
 F=1,4, +1,42+Bm ni)sin(mų, +no) 
+
 hacemos el cambio de variables Joli 
+
 Ahora tenemos en primer orden H=H(, I)+{{mw,+nw,)Bm „(,+fm „[„Šx)}cos(m6, +n0,)+ ... 
+
 CO 
+
 Podemos anular la perturbación haciendo 
+
 Bar -- Smo pa 
 mn 
 mw, +no 
+
 con tal que mw, +nw, no sea muy pequeño, porque para que la 
 transformación F sea infinitesimal, B debe ser pequeña, o sea, se debe cumplir 
+
 mw, nw, Así encontramos una banda de frecuencias. Si la perturbación es grande entonces la banda de frecuencias será ancha. 
+
 - 39 - 
+
 Pao si tremos la distorsión de cos(mw, +nw,) también tendemos la decos(m'w, +n'w) 
+
 siempre que ****, Tendremos entonces una multitud de perturbaciones que se 
 m m' 
 nnd 
+
 suman. Se trata de un fenómeno de resonancia. 
+
 El movimiento del sistema será el resultado del solapamiento de todas estas zonas de resonancia, siendo muy complicado, quizás ergódico. 
 Si V es pequeño f lo será y la banda de frecuencias también. 
+
 Si V es grande (o la energía se incrementa lo suficiente), la medida de las zonas de solapamiento de las resonancias se incrementa hasta que casi el espacio entero esta lleno de trayectorias erráticas. 
+
 El Teorema KAM indica, no prueba, la posibilidad de transición de un movimiento periódico a otro predominantemente caótico y casi ergódico. 
 Existen experimentos con ordenador. 
+
 Dos astrónomos Henon y Heiles en 1983 haciendo un modelo de la distribución de estrellas dentro de la galaxias. Trataban de ver si existía alguna constante del movimiento además de la energía (si existiera, todas las trayectorias estarían confinadas en superficies bidimensionales. Al hacer una sección de Poincaré encontraríamos curvas. Si no tuviéramos esta constante la trayectoria sería tridimensional y sólo encontraríamos puntos dispersos aleatoriamente). EI hamiltoniano que usaron era 
+
 - 40 - 
+
 H=_+P3+qi+a)+a?an 
+
 Para bajas energías encontraron que todas las trayectorias estaban sobre una superficie. Si incrementamos la energía vemos que empiezan a aparecer cadenas de islas alrededor de las órbitas estables, evidencia de la inestabilidad microscópica KAM. Si aumentamos la energía aún más, encontramos movimiento totalmente estadístico. 
+
 Sección de Poincaré para el sistema de Henon-Heiles para baja energia 
+
 - 41 - 
+
 Para mayores energías las zonas de inestabilidad se hacen mayores. 
+
 Para aún mayores energías, el comportamiento del sistema parece aleatorio. Sin embargo quizás para una mayor precisión en la integración encontrariamos otro resultado. 
+
 - 42 - 
+
 Vemos como hay cantidades que son constantes del movimiento para bajas energías, pero que van dejando de serlo al incrementarse la energía. 
 Existen otros muchos experimentos como el de Thiele, Wilson y Bunker, el de Izrailev y Chirikov, etc. En todos ellos encontramos los mismos resultados. 
+
 Vamos a estudiar con un poco de mayor detalle resonancias aisladas. Si 
 tenemos un hamiltoniano de la forma 
+
 H=H.(1/2) +fm (1) cos(mo, +no) 
+
 Llamaremos a este tipo de perturbación una resonancia m-n y a la zona del toroide deformado dada por la desigualdad anterior zona de resonancia m-n. 
 Este tipo de perturbación tiene una constante del movimiento 1=nd, -md, 
 que nos permitirá calcular las curvas intersección de la trayectoria con el plano que queramos. 
-Al introducir una perturbación 2-2 obtenemos en el plano Jz=0 las curvas de H, (que son circunferencias concéntricas) y la zona de la perturbación 2-2 encerada por una separatriz que se corta a sí misma en 2 puntos inestables. En cada lado de la separatriz encontramos órbitas estables. La resonancia aparece Para E20. Si incrementamos la energía las zonas de resonancia se alejan del origen, 
-aumentando de tamaño. 
+
+Al introducir una perturbación 2-2 obtenemos en el plano Jz=0 las curvas de H, (que son circunferencias concéntricas) y la zona de la perturbación 2-2 encerada por una separatriz que se corta a sí misma en 2 puntos inestables. En cada lado de la separatriz encontramos órbitas estables. La resonancia aparece Para E20. Si incrementamos la energía las zonas de resonancia se alejan del origen, aumentando de tamaño. 
+
 - 43 
+
 Sección de Poincaré para resonancia 2-2. 
+
 una 
+
 Sección de Poincaré para una resonancia aislada 3-2. La cadena de tres islas aparece para E=0,08. 
+
 - 44 - 
+
 Estudiamos ahora una resonancia 3-2. Encontramos en el plano J,=0 igual que antes las curvas de H. y una separatriz que ahora se corta en tres puntos inestables, separando tres órbitas estables. La resonancia aparece para EžE, E #0 
+
 Para una resonancia 2–3 encontramos un esquema similar pero en el plano 
 JO. 
+
 Una resonancia m-n (men) introduce m islas en J, y n en Jz. 
+
 Una resonancia aislada distorsiona el toroide introduciendo por pares nuevas órbitas estables e inestables. Aparecen para E20 y están acotadas por una separatriz que pasa a través de los puntos inestables. Se puede demostrar que las zonas de resonancia se hacen cada vez menores cuando m yn crecen. 
+
+
 Supongamos ahora que tenemos una resonancia doble, por ejemplo una 2-2 y una 2-3. Puesto que la 2-3 aparece para energías mayores que la 2–2 podemos usar el truco de Bon para eliminarla. Obtenemos una gráfica parecida a la obtenida para la resonancia 2-2. La constante del movimiento I ahora lo es con una menor precisión (si antes lo eran en 5 6 6 decimales, ahora no lo es con más de 3). 
+
 Aumentamos la energía para que pueda aparecer la resonancia 2-3. Esperamos que la inestabilidad aparezca en la región en la que las dos zonas se solapan. Las dos resonancias aparecen en los lugares esperados, pero también encontramos cadenas de cinco y siete islas. 
+
 - 45 
+
 Sección de Poincaré para una resonacia doble 2-2 y 2-3. La resonancia 2-3 aún no ha aparecido. 
+
 La resonancia 2-3 ya ha aparecido. Antes de que comiencen a solaparse aparece una cadena cinco islas. Aunque no se vea en el dibujo existen zonas de inestabilidad. 
+
 - 46 - 
-Podemos explicarlas del modo siguiente: el hamiltoniano H, con la resonancia 2-2 es integrable (pues tiene dos constantes del movimiento). Pasamos à unas nuevas coordenadas en las que el nuevo hamiltoniano H, no tenga dependencia angular. Tomamos el hamiltoniano total como el H, no perturbado y una resonancia 2–3. Si ahora transformamos a la inversa las coordenadas volviendo a las originales vemos que la resonancia 2–3 son las cadenas de 5 y 7 islas. Las llamaremos resonancias secundarias. 
+
+Podemos explicarlas del modo siguiente: el hamiltoniano H, con la resonancia 2-2 es integrable (pues tiene dos constantes del movimiento). 
+
+Pasamos à unas nuevas coordenadas en las que el nuevo hamiltoniano H, no tenga dependencia angular. Tomamos el hamiltoniano total como el H, no perturbado y una resonancia 2–3. Si ahora transformamos a la inversa las coordenadas volviendo a las originales vemos que la resonancia 2–3 son las cadenas de 5 y 7 islas. Las llamaremos resonancias secundarias. 
+
 Una integración más precisa nos muesta zonas de inestabilidad antes de que aparezca la resonancia 3-2. 
+
 Cuando las resonancias 2-2 y 2-3 se acercan, las resonancias de órdenes mayores empiezan a distorsionar macroscópicamente la superficie del toroide. La inestabilidad se debe a la multitud de órbitas estables e inestables que aparecen en la estrecha región entre las dos resonancias. 
+
 - 47 - 
+
 Resumiendo tenemos que las resonancias aisladas no afectan grandemente al movimiento del sistema. Pero en cuanto que las zonas de resonancia empiezan a solaparse, la inestabilidad aparece y las trayectorias dejan el toroide. 
+
 El teorema de Poincaré sobre la no existencia (no integrabilidad) de constantes del movimiento (ecuaciones del movimiento) había servido de base para la mecánica estadística. Nos daba un argumento para que los estados fueran igualmente probables. 
+
 El teorema KAM prueba que aunque no existan constantes del movimiento, si V es pequeño la mayoría de las condiciones iniciales conducen al movimiento sin apenas influencias por las resonancias, con lo que no todos los estados son igualmente probables. 
+
 La existencia de estas constantes no viola el Teorema de Poincaré porque la menor parte de las trayectorias que se mueve bajo la influencia de muchas resonancias está incluida densamente dentro de la zona de comportamiento regular. 
+
 El teorema KAM apunta al inicio de una inestabilidad que daría lugar a trayectoria irregulares volviéndose el movimiento estadístico. 
+
 La inestabilidad KAM ocurre solo cuando la amplitud del movimiento se vuelve grande. Sin embargo, a temperaturas cercanas al cero sigue siendo válidas las leyes estadísticas. Por tanto debe de existir una inestabilidad KAM incluso para pequeñas amplitudes. Encontramos esta inestabilidad para potenciales altamente repulsivos. 
 - 48 - 
-Hasta hace poco se pensaba que la ergodicidad era cosa de los sistemas de muchas partículas. Hemos visto que es posible encontrar zonas de comportamiento caótico para sistemas con sólo dos grados de libertad. Cuando aumentemos el número de grados de libertad se incrementará el número de resonancias y mayor será la probabilidad de que dos resonancias se solapen. Para un sistema típico de 106 partículas puede parecer que la ergodicidad es la regla y no la excepción. El teorema KAM no tiene en cuenta que al sumar todos lo pequeños efectos de todas las partículas obtengamos el resultado tan apetecido de la ergodicidad. 
+Hasta hace poco se pensaba que la ergodicidad era cosa de los sistemas de muchas partículas. Hemos visto que es posible encontrar zonas de comportamiento caótico para sistemas con sólo dos grados de libertad. 
+
+Cuando aumentemos el número de grados de libertad se incrementará el número de resonancias y mayor será la probabilidad de que dos resonancias se solapen. Para un sistema típico de 106 partículas puede parecer que la ergodicidad es la regla y no la excepción. El teorema KAM no tiene en cuenta que al sumar todos lo pequeños efectos de todas las partículas obtengamos el resultado tan apetecido de la ergodicidad. 
+
 De todas formas no se ha probado nada. No sabemos qué zonas de inestabilidad son ergódicas. Quizás con mayores precisiones de integración los puntos aparentemente aleatorios llevaran un cierto orden. 
+
 Para pequeñas amplitudes sólo intervienen unas pocas resonancias, la mecánica estadística puede predecir solo unas pocas de las más simples magnitudes. Al aumentar la amplitud intervienen más resonancias permitiéndonos predecir más cantidades (pero no todas) correctamente. 
 - 49 - 
 
@@ -632,58 +726,94 @@ Para pequeñas amplitudes sólo intervienen unas pocas resonancias, la mecánica
 
 La física cuántica no relativista está basada en la ecuación de Schrödinger, que es una ecuación diferencial cuyas soluciones nos darán distribuciones de probabilidad de cantidades observables. Algo que diferencia grandemente la física cuántica de la clásica son las relaciones de incertidumbre de Heisemberg entre dos variables conjugadas de una partícula (por ejemplo la posición y el momento o la energía y el tiempo) 
 Axapel 
+
 Esto nos impide conocer simultáneamente sus valores. 
+
 Por ser una ecuación lineal obtendremos soluciones periódicas o cuasiperiódicas. Las relaciones de Heisemberg nos impiden tener trayectorias definidas. Por tanto los sistemas cuánticos no serán caóticos en el sentido que hemos usado hasta ahora. 
+
 El principio de correspondencia de Bohr nos dice que para cortos periodos de tiempo (para que la energía esté fijada, para periodos mayores necesitamos cálculos cuánticos) podemos describir los estados atómicos muy excitados de un modo clásico. En estas condiciones las funciones de onda revelan características clásicas. 
+
 Por ejemplo una partícula dentro de una caja bidimensional con forma de pista de atletismo tiene una probabilidad de estar cerca de las órbitas periódicas inestables de la correspondiente partícula clásica. 
+
 - 50 - 
+
 Podemos también estudiar átomos Rydberg, en los que un electrón están tan excitado que podemos suponerlo en un espectro continuo. Si añadimos al sistema un campo de microondas producimos la ionización del electrón que dependerá grandemente de la amplitud del campo y débilmente de la frecuencia. Esta fenómeno se ha simulado con éxito por medio de un modelo clásico. En el modelo encontramos comportamiento caótico para una amplitud mayor que un cierto valor crítico. Para estos valores de amplitud se producía la ionización en el sistema real. Para explicarlo podemos suponer que las trayectorias vagan por el espacio de las fases dando lugar a un mecanismo de difusión haciendo que el electrón se escape. 
+
 - 51 - 
 
 ## Apéndice A: Fractales
 
 Supongamos que miramos un objeto con un microscopio de resolución y aumento ilimitados. Si el objeto fuera un fractal, al incrementar el aumento obtendríamos cada vez más detalles. Pero la estructura observada sería totalmente similar a la que teníamos con menor aumento. Decimos que el objeto es autosimilar. Los objetos fractales son autosimilares, tienen simetría ante un cambio de escala. 
+
 Conjunto de Cantor. D=0.631. 
+
 El concepto de autosimilitud no es nuevo en física. Se había estudiado en detalle en las propiedades críticas de las transiciones de fase. Aquí la autosimilitud se consideraba como una peculiaridad de la competición entre orden y desorden a la temperatura de la transición. Podemos ver que es mucho más común y aparece en muchos fenómenos de equilibrio y no equilibrio, aparentemente no relacionados con las transiciones de fase. 
+
 La mayoría de los métodos matemáticos empleados en la física se basan en funciones analíticas y podemos definir sus derivadas. La geometría usual trata de objetos suaves, sin defectos. Sin embargo en la naturaleza encontramos objetos que no poseen estas propiedades de suavidad y en los que la irregularidad parece 
+
 - 52 - 
+
 ser la norma y no la excepción. La geometría fractal trata estas irregularidades como elementos esenciales. 
+
 Es claro que la autosimilitud no es compatible con la analiticidad. Una curva derivable (suave) no puede ser autosimilar, puesto que es aproximable localmente por una recta. La autosimilitud implica lo contrario, que a cada vez menores escalas encontramos la misma complejidad. 
+
 www 
 . 
 .edu ergren 
 Helecho fractal. D=1.5. 
-Un árbol, una montaña o la costa tienen estructura autosimilar”. Pensemos en la costa. Desde el espacio podemos ver sólo los grandes cabos y golfos. Si viajamos en avión, veremos más golfos y cabos dentro de los que veíamos antes. Si volamos a ras de suelo, veremos otros aún menores dentro de los de antes. La longitud de la costa depende de la escala a la que la midamos. 
+
+Un árbol, una montaña o la costa tienen estructura autosimilar”. Pensemos en la costa. Desde el espacio podemos ver sólo los grandes cabos y golfos. 
+
+Si viajamos en avión, veremos más golfos y cabos dentro de los que veíamos antes. Si volamos a ras de suelo, veremos otros aún menores dentro de los de antes. La longitud de la costa depende de la escala a la que la midamos. 
+
 Vamos a definir todo esto con un poco de más rigor. 
+
 Incluso nosotros mismos tenemos estructuras autosimilares en nuestro cuerpo como el aparato circulatorio o los pulmones. (Ver "Caos y fractales en la fisiologia humana" Goldberger, Rigney y West en Investigación y Ciencia). 
 - 53 - 
 Matemáticamente un fractal es un objeto en el que la dimensión Haussdorf es mayor que la topológica. La dimensión topológica es la normal, a la que estamos acostumbrados. Vamos a definir ahora la dimensión Haussdorf. 
-Supongamos que tenemos nuestro objeto en un espacio de p dimensiones. Vamos a recubrir nuestro conjunto con cubos de lado ε. Sea N(E) el menor número de estos cubos necesario para cubrirlo. Este número se incrementará como 
-N(E)- " siendo D la dimensión Haussdorf de nuestro objeto. Despejando 
-D 
-= -lim 
-logN(e) 
--0 log(e) donde hemos despreciado las constantes de proporcionalidad en el límite. 
+
+Supongamos que tenemos nuestro objeto en un espacio de p dimensiones. 
+
+Vamos a recubrir nuestro conjunto con cubos de lado ε. Sea N(E) el menor número de estos cubos necesario para cubrirlo. Este número se incrementará como  N(E)- " 
+
+siendo D la dimensión Haussdorf de nuestro objeto. Despejando 
+
+D = -lim logN(e) -0 log(e) 
+
+
+donde hemos despreciado las constantes de proporcionalidad en el límite. 
+
 Con esta definición evidentemente podemos obtener dimensiones no 
 enteras. 
+
 Veamos como recuperamos el concepto topológico de dimensión. Para un 
 punto N(E)-1, lo que da D-0. Para una línea N(e)= 
-y obtenemos D-1, para 
-una superficie obtendríamos D=2 etc. 
+y obtenemos D-1, para una superficie obtendríamos D=2 etc. 
+
 Vamos a calcular la dimensión para el dibujo de la figura. Para construirlo retiramos el triángulo central de cada uno de los triángulos de la figura. En cada paso el no de triángulos se multiplica por tres y la longitud del lado se divide por dos, por lo que N(E)=3" y €=2 lo que nos da en total: D-lim log3" log3 -1.58496... 
+
 n- log2" log2 
 - 54 - 
+
 Triángulo de Sierpinski. D=1.585 
+
 Otra propiedad de los fractales es que pueden tener un superficie infinita guardando en su interior un volumen finito. 
-Tenemos un ejemplo de esto en la conocida curva de Koch. Se obtiene retirando la parte central de cada uno de los lados de un triángulo y sustituyéndolos por dos segmentos de un tercio de la longitud del inicial. 
+
+Tenemos un ejemplo de esto en la conocida curva de Koch. Se obtiene retirando la parte central de cada uno de los lados de un triángulo y sustituyéndolos por dos segmentos de un tercio de la longitud del inicial.
+
 - ^ are Curva de Koch 
+
 Su dimensión: 
+
 D =lim log3" =1.2628 
---- log2" Evidentemente su longitud es infinita, en cada paso multiplicamos el no de 
+--- log2" 
+
+Evidentemente su longitud es infinita, en cada paso multiplicamos el no de 
 lados por cuatro y dividimos su longitud por tres. La longitud sería L =lim 
 =00, 
 - 
 3 
+
 Y el área es finita pues cabe en un círculo de radio el lado inicial. 
 Esta última propiedad es la que permite que los atractores caóticos (gracias a su naturaleza fractal, el de Lorenz tiene dimensión 2.06 ) puedan contener en un volumen finito a las trayectorias que divergen exponencialmente unas de otras. 
 - 55 - 
@@ -692,14 +822,25 @@ Esta última propiedad es la que permite que los atractores caóticos (gracias a
 ## Apéndice B: Atractor de Lorenz
 
 Como aplicación y a la vez como ejercicio, me propuse reproducir una ilustración que encontré en el artículo "Caos" de Crutchfield. En ella se veía como la evolución en un atractor caótico depende fuertemente de las condiciones iniciales. Partiendo de muchos puntos arbitrariamente cercanos, podemos encontrar en ellos trayectorias completamente distintas. 
+
 Para ello tomamos como parámetros del sistema de Lorenz: 
+
 0=10, b= , R-28. 
+
 Ahora hacemos evolucionar 100 puntos que inicialmente se encontraban en un volumen de 0.008. 
+
 En los distintos dibujos podemos ver como se van separando las trayectorias. Me gusta especialmente el dibujo de 1000 iteraciones. Vemos como lo que antes era un punto, ahora es una línea y además plegada sobre sí misma. 
+
 El proyecto era llegar hasta las 10000 iteraciones, pero un infortunado cortocircuito (causado por mi mismo) acabó con dos días de cálculo continuado de mi sufrido ordenador. El programa, que se incluye después, lo realicé en BASIC y se dejó correr en un Comodore Amiga. 
+
 En la integración se usa el método de Runge-Kutta en cuarto orden, que si bien ralentiza al programa, sí que nos da una mayor precisión en los resultados. 
+
 - 56 
-* ************************************************ TM ******* Atractor de Lorenz. ********* TV ************************************************** 
+
+```BASIC
+*************************************************  
+************  Atractor de Lorenz. ***************
+************************************************** 
 BEM definimos el sistema de ecuaciones diferenciales 
 DEF FNx(x,y)=sig\(y-x) 
 EF FNy(x, y, z)=x*(R-2)-y DEF FNz(x, y, z)=x*y-b*z 
@@ -779,43 +920,32 @@ CLS PRINT C OPEN "r",#1, "lorenz"+STR$(c),8 FIELD #1,4 AS x$,4 AS y$
 FOR a=1 TO 100 
 GET #1, a 
 PSET (CVS (x$), CVS(y$)) NEXT CLOSE #1 
+```
+
+### Evolución en el atractor de Lorenz 
+
 - 60 - 
 Evolución en el atractor de Lorenz 
-2 
-OS 
-DU 
-Wh 
-. 
 - 61 - 
-wanawwwwwww 
-00 
-O Evolución en el atractor de Lorenz 
+Evolución en el atractor de Lorenz 
 - 62 - 
 ID Evolución en el atractor de Lorenz 
 - 62 - 
 Evolución en el atractor de Lorenz: 488 
 - 63 - 
-Evolución en el atractor de Lorenz: 
-588 
+Evolución en el atractor de Lorenz: 588 
 - 64 - 
-O Evolución en el atractor de Lorenz 
-688 
+Evolución en el atractor de Lorenz 688 
 - 65 
 ID Evolución en el atractor de Lorenz 888 
 - 66 
-| 
 Evolución en el atractor de Lorenz 1888 
 - 67 - 
-________________
-
-
 Evolución en el atractor de Lorenz 1288 
 - 68 
-- 
-I Evolución en el atractor de Lorenz 1588 
+Evolución en el atractor de Lorenz 1588 
 - 69 - 
 Evolución en el atractor de Lorenz 1688 
-10 
 - 70 - 
 Evolución en el atractor de Lorenz 2888 
 - 71 - 
@@ -828,26 +958,30 @@ Evolución en el atractor de Lorenz 4888
 Evolución en el atractor de Lorenz 5888 
 - 75 - 
 - 76 - 
-Bibliografía utilizada: 
-- Nonlinear resonance and chaos in conservative systems, L.E. Reichl & 
-W.M. Zheng. 
+
+## Bibliografía
+
+### Bibliografía utilizada
+
+- Nonlinear resonance and chaos in conservative systems, L.E. Reichl & W.M. Zheng. 
 - Amplitude instability and ergodic behavior for conservative nonlinear oscillator system, Grayson H. Walker & Joseph Ford. Physical Review V. 188 N.1. 
 - Apendice The ergodic problem, Balescu. 
-- Movimiento caótico, Antonio F. Rañada, Investigación y Ciencia, Marzo 
-1986. 
+- Movimiento caótico, Antonio F. Rañada, Investigación y Ciencia, Marzo 1986. 
 - Chaos, Order, Patterrns, Fractals. An overview S. Lundqvist. 
-- Caos, Crutchfield, Doyne Farmer, Investigación y Ciencia 
-Febrero 
-1987. 
+- Caos, Crutchfield, Doyne Farmer, Investigación y Ciencia Febrero  1987. 
 - One-dimensional iterative maps, H.A. Laumerierr. 
 - Fractals in Physics: introductory concepts, L. Pietronero. 
 - Order and Chaos in Hamiltonian system, I.C. Precival. 
 - Universality in Chaos, Cvitanovic. 
+
+
+
 - 77 
-Para ampliar: 
-- Todos los anteriores y 
+
+### Para ampliar
 - Chaotics dynamic: an introduccion, Baker and Gollub. 
 - Caos cuántico, Martin C. Gutzwiller. 
 - Chaotic dynamic and strange attractors, David Ruelle. 
 - Como hacer caos en casa, Investigacion y ciencia Marzo 1992. 
+
 - 78 -
