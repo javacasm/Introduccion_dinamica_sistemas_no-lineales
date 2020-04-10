@@ -3,6 +3,7 @@
 
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/kevinmgill/44583965185/" title="Voyage of the Moons"><img src="https://live.staticflickr.com/1919/44583965185_ec68fe0838_w.jpg" width="400" height="400" alt="Voyage of the Moons"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 by [Kevin Gil](https://www.flickr.com/photos/kevinmgill/44583965185/)
 
 
@@ -24,18 +25,18 @@ José Antonio Vacas Martínez @javacasm
 
 
 INDICE: 
-1.- INTRODUCCION ................. 3 
-2.- ¿QUE ES EL CAOS? ... 
-3.- ECUACION LOGISTICA .. 
-4.- ATRACTORES ....... 14 
-5.- ¿CAOS? ... ...... 23 
-6.- RESUMIENDO .. ...... 28 
-7.- UNIVERSALIDAD ... . . . . . . 30 
-8.- CAOS Y ERGODICIDAD. T* KAM ...... ...... 35 
-9.- CAOS CUANTICO ....... ...... 50 
-APENDICE A: FRACTALES ...... ...... 52 
-APENDICE B: ATRACTOR DE LORENZ .. 
-BIBLIOGRAFIA .... . . . . . . 77 
+1. INTRODUCCION 
+1. ¿QUE ES EL CAOS?
+1. ECUACION LOGISTICA
+1. ATRACTORES
+1. ¿CAOS?
+1. RESUMIENDO
+1. UNIVERSALIDAD 
+1. CAOS Y ERGODICIDAD. Teorema KAM
+1. CAOS CUANTICO
+APÉNDICE A: FRACTALES
+APÉNDICE B: ATRACTOR DE LORENZ 
+BIBLIOGRAFIA
 
 ## Introducción
 
@@ -103,7 +104,6 @@ La inestabilidad del caos es local. La encontramos en cada punto. De ahí la div
 
 Si las ecuaciones del sistema son integrables, nuestro sistema tendrá una solución explícita. Dado un estado inicial, lo metemos en la "fórmulita" y obtenemos 
 
-
 cual será el estado final para un tiempo t. En los sistemas no integrables, no tenemos solución explícita. Dado un estado inicial tenemos que pasar por todos los intermedios para llegar hasta el estado final en t. Aquí no tenemos el atajo de las fórmulas. Al ser las ecuaciones no lineales en cada paso de nuestra integración el error se irá incrementando hasta llegar a tapar nuestro resultado. 
 
 Los sistemas caóticos también son deterministas, pues están regidos por ecuaciones del movimiento como lo estaban los sistemas con movimientos regulares. Dado un estado inicial tenemos determinado el final. El tener una precisión determinada en la medida y en el cálculo van a hacer que no sepamos exactamente cual es el estado inicial ni por supuesto cuales son los intermedios durante nuestro cálculo. Nuestra finitud es la responsable de la impredecibilidad de los sistemas caóticos. 
@@ -117,160 +117,256 @@ Un buen ejemplo de ello es la ecuación logística.
 Existen sistemas aparentemente simples y que son capaces de producir comportamiento caótico. Un ejemplo es la ecuación logística. Se trata de un sistema discreto iterativo, la salida se vuelve a introducir y lo que estudiamos es el comportamiento de la sucesión así obtenida. Cuando trabajamos en una sección de Poincaré (calculamos la intersección de la trayectoria con una superficie determinada), obtenemos una evolución discreta del sistema. La forma explícita de la ecuación logística es: 
 
 Xo+1=bX,(1-x) 
+
 donde X puede variar entre 0 y 1. b actúa como parámetro de control (nos determinará el comportamiento del sistema) y puede tomar valores entre 0 y 4. 
+
 Aunque se trata de una sencilla sucesión discreta nos puede servir para ilustrar muchas de las características de sistemas caóticos. Esta ecuación puede servirnos como un modelo ecológico simple. La variable X puede representar la cantidad de individuos de una especie Podemos estudiar su evolución para un valor inicial Xo y un b dados. Si X se hace muy grande (cercana a 1) el alimento escaseará y la población empezará a disminuir como nos indica el término (1-x). 
 
 Con una simple calculadora podemos realizar unas cuantas iteraciones de la fórmula. Nos podemos sorprender de los resultados. Vamos a tratarlo de un modo más matemático y empezaremos con un poco de teoría de sucesiones iterativas unidimensionales. 
+
 -9 
+
 Consideremos la sucesión como una función: 
+
 x'=f(x) 
-y supondremos que es lo bastante suave como para poder derivarla. 
-Un punto fijo será aquel en el que se cumple que f(E)=E. La posibilidad que le sigue en complejidad es una órbita o ciclo, que está formada por puntos periódicos. Un punto periódico & de orden m va a ser un punto fijo de f(x), siendo m el menor número entero para el que esto se cumple. f(E), f(E), ...,f"- (E) son también puntos periódicos de orden m. 
-Para conocer el comportamiento cerca de un punto fijo , estudiaremos el valor de 2=f°(E) (el símbolo se refiere a la derivada de f respecto de su variable). 
-Si tenemos en cuenta el carácter iterativo de nuestra sucesión veremos que podemos clasificar los puntos fijos según el valor de 1 en: 
-- la]<1 de atracción o estables. - 111=0 superestables. - 1a/>1 de repulsión o inestables - 191–1 neutrales 
-Podemos hacer exactamente la misma clasificación para las órbitas periódicas. Si Xos...,Xp-1 son los miembros de un ciclo de período m. Para estudiar su evolución definiremos ahora =f'(X.)f'(X,)...f'(X ) 
-Con todo esto podemos clasificar los puntos en: a) Puntos fijos b) Puntos periódicos 
-- 10 - 
-Consideremos la sucesión como una función: 
-x'=f(x) 
+
 y supondremos que es lo bastante suave como para poder derivarla. 
 Un punto fijo será aquel en el que se cumple que f(E)=E. La posibilidad que le sigue en complejidad es una órbita o ciclo, que está formada por puntos periódicos. Un punto periódico & de orden m va a ser un punto fijo de f"(x), siendo m el menor número entero para el que esto se cumple. f($), f(E), ... ,1" (3) son también puntos periódicos de orden m. 
+
 Para conocer el comportamiento cerca de un punto fijo , estudiaremos el valor de î=f'(E) (el símbolo se refiere a la derivada de f respecto de su variable). 
+
 Si tenemos en cuenta el carácter iterativo de nuestra sucesión veremos que podemos clasificar los puntos fijos según el valor de a en: 
-- 19/<1 de atracción o estables. - 121=0 superestables. - a>1 de repulsión o inestables - 12|=1 neutrales 
+
+- 19/<1 de atracción o estables. 
+- 121=0 superestables. 
+- a>1 de repulsión o inestables 
+- 12|=1 neutrales 
+
 Podemos hacer exactamente la misma clasificación para las órbitas periódicas. Si Xos...,Xm-1 son los miembros de un ciclo de período m. Para estudiar su evolución definiremos ahora =f'(X.)f'(X,)...f'(X. -_-) 
-Con todo esto podemos clasificar los puntos en: a) Puntos fijos b) Puntos periódicos 
+Con todo esto podemos clasificar los puntos en: 
+
+a) Puntos fijos 
+
+b) Puntos periódicos 
+
 - 10 - 
+
 c) Puntos eventualmente periódicos, son preimagen de un punto periódico, es decir existe un m para el que se cumple que f(x) es periódico. 
 d) Puntos asintóticamente periódicos, la sucesión contiene una parcial que converge a un punto periódico. 
 e) Punto aperiódico que no es de ninguna de las clases anteriores. La sucesión será estocástica o aperiódica. 
+
 También podemos estudiar propiedades de f en función de b. Así podemos fijar nuestra atención en un punto fijo £(b) y en su evolución en función de b. Puede pasar de ser estable a ser inestable dependiendo del valor de ^(b). 
 
 Vamos a entrar ahora de lleno en le estudio de la ecuación logística. Aquí 2=(1-2x). Vamos a tener dos puntos fijos: 
 X=0 con a=b y 
 X=1 - con 1-2-6 
+
 Para b=1 el punto X=0 pierde la estabilidad y pasa a ser inestable. X=1 
 lo hará para b=3 pues 1=-1. Aparecerá así un ciclo de período 2 para el que se cumple: 
-Xx=bX(1-x) X,=bX/(1-x) operando algebraicamente podemos llegar a que X, y X, cumplen 
-b2x1-(6+1)bX,+b+1=0 De aquí podemos calcular el valor de a 
+
+Xx=bX(1-x) X,=bX/(1-x) operando algebraicamente podemos llegar a que X, y X, cumplen b2x1-(6+1)bX,+b+1=0 De aquí podemos calcular el valor de a 
 1=b?(1-2x,)(1-2x) = -b2+26+4 
+
 Vemos que 2=1 para b=3 y que =-1 para b=1+V6=3.4495 
+
 - 11 - 
+
 lo que significa que para este valor de b el ciclo de período dos pierde estabilidad y se produce una nueva duplicación, con lo que se creará un ciclo de período 4. 
+
 Podemos encontrar valores de b para los que hay nuevas duplicaciones b=3, 3.4495, 3.5441, 3.56421, 3.5688... 
+
 Estos valores parecen seguir una progresión del tipo 
-beb-cF con los valores b=3.5670 c=2.6327 
-F=4,6692 
+
+beb-cF con los valores b=3.5670 c=2.6327 F=4,6692 
+
 Pasados estos valores encontramos una región de comportamiento caótico, en el que X se mueve por toda la zona de forma irregular. 
+
 Llamamos F a la razón de la progresión porque fue Feigenbaum, un físico teórico de partículas quien encontró esta regularidad en los puntos en los que aparece duplicación. 
-Más importante aún que este hallazgo fue encontrar en una gran clase de sistemas dinámicos el mismo esquema de duplicaciones de período con la misma constante F. Este comportamiento se mantiene para todas las f(x) bien comportadas con f(0)=f(1) y con un solo máximo en el intervalo (0,1). Este fue el descubrimiento de la universalidad de las duplicaciones de período en las transiciones al caos. Posteriormente hablaremos más extensamente de este tema. 
+
+Más importante aún que este hallazgo fue encontrar en una gran clase de sistemas dinámicos el mismo esquema de duplicaciones de período con la misma constante F. Este comportamiento se mantiene para todas las f(x) bien comportadas con f(0)=f(1) y con un solo máximo en el intervalo (0,1). 
+
+Este fue el descubrimiento de la universalidad de las duplicaciones de período en las transiciones al caos. Posteriormente hablaremos más extensamente de este tema. 
+
 El intervalo ( 
 64) contiene infinitas pequeñas ventanas en la región de 
 movimiento caótico en las que para ciertos valores de b aparecen ciclos estables de período m. Por ejemplo desde b=3.8284 hasta b= 3.8415 encontramos un ciclo 
+
 - 12 
+
 Diagrama de bifurcación. 
+
 de período 3 que permanece estable. Para el último valor de b encontramos duplicación de período, pasando a un ciclo de período 6, luego 12,... llegando otra vez a comportamiento caótico. 
+
 Estas zonas de comportamiento regular en medio de la región caótica son realmente sorprendentes. Es algo parecido a que en un momento dado mientras estamos moviendo el café para disolver el azúcar, encontráramos que la leche está por un lado, el café por otro y el azúcar en el fondo, para luego si seguimos moviendo volver a encontrar la mezcla normal. 
+
 - 13 - 
-Atractores. 
+
+## Atractores
+
 Otra forma de ver el comportamiento de un sistema dinámico es estudiando el espacio de las fases completo. 
+
 Empecemos con un péndulo ideal sin amortiguamiento. La trayectoria es una especie de elipse, que viene determinada por la energía del sistema (que es una constante, pues el sistema es conservativo) 
+
 d2e 
 de 9 +0,sin8-0 
+
 Para pequeñas amplitudes la frecuencia del péndulo está determinada por 
 . Para mayores amplitudes (donde las no-linealidades son más acusadas) el 
 período depende de la energía del sistema. 
+
 Veamos ahora un péndulo con amortiguamiento 
+
 dt2 dt la trayectoria es una espiral que siempre converge hacia el mismo punto sin depender de la condición inicial que tomemos. Es como si este punto atrajera al sistema. En este sistema podemos ver una propiedad típica de los sistemas disipativos: la contracción del espacio de las fases. Es como si la evolución temporal fuera haciendo que el espacio fásico encogiera. 
+
 Otro ejemplo de sistema disipativo es el oscilador de Van der Pol 
+
 - 14 
+
 Oscilador de Van der Pol. 
+
 en el que a veces término de amortiguamiento es negativo y a veces positivo. Sin depender de la condición inicial el sistema queda confinado a una sucesión de estados que se repiten. La órbita es cerrada. Tenemos un ciclo límite. El sistema "olvida" las condiciones iniciales, en el sentido de que su destino final del sistema no depende de ellas. Tenemos que el ciclo límite atrae hacia así a la trayectoria del sistema. 
+
 Decimos que una región (de menor dimensión que nuestro espacio fásico) es un atractor si el movimiento del sistema tiende a acercarse a esa zona quedando confinado en ella después de un cierto tiempo. El atractor más sencillo es el punto hacia el que tiende un péndulo con amortiguamiento. 
+
 Un atractor es una configuración estable, porque se mantiene en el tiempo. 
 2 Podemos considerarlo como un acercamiento asintótico. 
+
 - 15 - 
+
 Oscilador de Van der Pol. 
+
 en el que a veces término de amortiguamiento es negativo y a veces positivo. Sin depender de la condición inicial el sistema queda confinado a una sucesión de estados que se repiten. La órbita es cerrada. Tenemos un ciclo límite. El sistema "olvida" las condiciones iniciales, en el sentido de que su destino final del sistema no depende de ellas. Tenemos que el ciclo límite atrae hacia así a la trayectoria del sistema. 
+
 Decimos que una región (de menor dimensión que nuestro espacio fásico) es un atractor si el movimiento del sistema tiende a acercarse a esa zona quedando confinado en ella después de un cierto tiempo. El atractor más sencillo es el punto hacia el que tiende un péndulo con amortiguamiento. 
+
 Un atractor es una configuración estable, porque se mantiene en el tiempo. 
 2 Podemos considerarlo como un acercamiento asintótico. 
+
+
 - 15 - 
+
 Un sistema puede tener varios atractores. La región que evoluciona hacia un atractor se llama cuenca de atracción y puede ser muy complicada, pero debe cumplirse que la trayectoria pase cerca de cada uno de los puntos del atractor a lo largo del tiempo. Esto significa que el atractor no puede estar formado por partes disconexas. 
+
 Ejemplo de sistema con dos atractores 
+
 Dos osciladores acoplados nos darían un atractor mas complicado como es un toroide. Para frecuencias inconmensurables tenemos movimiento cuasiperiódico, el sistema se puede mover impredeciblemente por la superficie, aunque nunca se repita y la trayectoria no sea cerrada. 
+
 Un mismo sistema puede presentar distintas clases de atractores dependiendo de los valores de sus parámetros de control (energía para el péndulo, número de Reynolds en un fluido, ...). Veamos un ejemplo con un péndulo forzado armónicamente 
+
 every - užsino-Acos(wt 
+
 - 16 
+
 Péndulo normal. 
 periódico 
 algo más 
+
 Movimiento complicado. 
 ... 
+
 Movimiento caótico. 
+
 Lorenz, para comprobar sus ideas sobre los sistemas no-lineales, hizo un modelo para la convección. Se trata de un sistema de 3 ecuaciones no lineales con 3 incógnitas: 
+
 - 17 - 
-________________
+
 
 
 ay=x(R-z)-y 
 dx=xy-bz 
+
 Por supuesto la estructura del atractor debe cambiar continuamente con los parámetros del sistema. Lorenz encontró que este sistema para ciertos valores de estos, evolucionaba hacia una zona determinada, independientemente de la condición inicial. 
+
 HOWS 
+
 Atractor de Lorenz. 
+
 Se trata de una figura con dos zonas redondas, parecidas a espirales, como una mariposa. 
+
 Tenía un tamaño finito, pero nunca se cortaba a sí mismo (es una figura 
 tridimensional). 
+
 - 18 - 
+
 La diferencia con el toroide anterior es que aquí dos trayectorias de puntos cercanos originariamente, se separan de modo exponencial. Esto implica extremada dependencia de las condiciones iniciales. 
+
 Lorenz, no sabía lo que había encontrado. Por la misma fecha, Ruelle y Takens, teóricamente habían dado con una figura parecida. A este tipo de atractor le llamaremos atractor extraño. 
+
 Ruelle lo define así (primero definiremos un concepto previo, el de conjunto atractivo): 
+
 Un conjunto A es un conjunto atractivo si satisface (siendo U el entorno fundamental de A y representando f la evolución): 
+
 1) Atracción: para cada abierto V - A tenemos f'U CV para t 
 suficientemente grande. 
+
 2) Invariancia: f*A = A 
 Vt 
 Definimos su base de atracción como el conjunto de los x tales que fx se 
 aproxima a A para t + ". Un atractor será el conjunto de los puntos de 
-acumulación de {f'(x)}. Debe ser invariante pero no necesita tener una base de 
-atracción abierta. 
+acumulación de {f'(x)}. Debe ser invariante pero no necesita tener una base de atracción abierta. 
+
 3) Irreducibilidad: no puede estar formado por regiones disjuntas. Matemáticamente: podemos elegir x' de tal forma que V XE A 3t : f'x' está arbitrariamente cerca de x. 
+
 - 19 - 
+
 Estas condiciones las cumplen todos los atractores. La condición especial que cumplen los atractores extraños es: 
+
 4) Dependencia sensitiva a las condiciones iniciales. Técnicamente: 
 su medida asintótica tiene exponente positivo (su exponente de Lyapunov es positivo. Más adelante veremos qué es ésto). 
+
 También le exigiremos una cierta estabilidad ante las perturbaciones 
 interiores y exteriores. 
+
 5) Estabilidad bajo pequeñas perturbaciones aleatorias. 
 Los atractores nos darán una descripción global del comportamiento asintótico del sistema. 
+
 Se encuentra que incluso para sistemas con muchos grados de libertad, el sistema acaba confinado en atractores de dimensión baja, lo que implica que sólo unos pocos grados de libertad están activos. La mayoría de las condiciones iniciales conducen a un movimiento que queda confinado en el atractor. 
-El volumen en el espacio de las fases para sistemas disipativos siempre disminuye y en sistemas de muchas dimensiones esto da lugar a una reducción en la dimensionalidad, cuando el sistema se aproxima al atractor, con una dimensión mucho menor que la del sistema dinámico mismo. En el caso simple de un péndulo amortiguado se produce una reducción de la dimensión de 2 a 1 al alcanzar el ciclo límite. 
+
+El volumen en el espacio de las fases para sistemas disipativos siempre disminuye y en sistemas de muchas dimensiones esto da lugar a una reducción en la dimensionalidad, cuando el sistema se aproxima al atractor, con una dimensión mucho menor que la del sistema dinámico mismo. 
+
+En el caso simple de un péndulo amortiguado se produce una reducción de la dimensión de 2 a 1 al alcanzar el ciclo límite. 
+
 - 20 - 
-La diferencia entre los atractores extraños y los demás está en (ya lo hemos repetido varias veces, pero es muy importante) que éstos tienen sensibilidad a las condiciones iniciales. Dos trayectorias que empezaran arbitrariamente cerca acabarán totalmente separadas. Esto ocurre a la vez que el volumen se contrae, lo 
-que significa que no hay una contracción uniforme en todas las 
-direcciones. Esto nos va a dar lugar a una reducción en la dimensionalidad del movimiento del sistema. 
+
+La diferencia entre los atractores extraños y los demás está en (ya lo hemos repetido varias veces, pero es muy importante) que éstos tienen sensibilidad a las condiciones iniciales. Dos trayectorias que empezaran arbitrariamente cerca acabarán totalmente separadas. Esto ocurre a la vez que el volumen se contrae, lo  que significa que no hay una contracción uniforme en todas las direcciones. Esto nos va a dar lugar a una reducción en la dimensionalidad del movimiento del sistema. 
+
 El secreto de que separándose las trayectorias todo se mantenga en un espacio finito está en plegar, estirar y pegar el espacio de las fases. 
 Plegamiento del espacio de las fases. 
+
 Este proceso de estirar y pegar continua ad infinitum. Y esto es lo que le da complejidad al movimiento caótico. Es como amasar el pan. El caos amasa el espacio de las fases como si fuera un panadero. Dos puntos que al principio estaban cercanos acabarán muy lejos. Lo mismo puede pasar al revés. La figura resultante es un fractal. 
+
 Un fractal es un objeto matemático autosemejante, es decir a cualquier escala es parecido a sí mismo. A ninguna escala encontramos simplicidad básica. Podemos verlo en el apéndice. 
+
 - 21 - 
+
 El conseguir una imagen de un atractor no es nada fácil. Normalmente suelen tener tres o más dimensiones. Una forma de visualizarlos, aunque sea poco a poco es cortarlos por rebanadas, llamadas secciones de Poincaré. Esta proyección retira una dimensión del atractor y convierte un línea de una trayectoria 
 en un punto. 
+
 Sección de Poincaré de un toroide 
 Sección de Poincaré 
+
 - 22 - 
-¿Caos? 
+
+## ¿Caos? 
+
 Existen varias propiedades del caos que nos permiten reconocerlo en cualquier fenómeno. Estas propiedades también pueden servirnos para ver como el comportamiento caótico aparece en sistemas completamente deterministas. 
+
 Una de ellas puede ser el estudio del espectro de frecuencias, que nos permitirá distinguir entre movimiento periódico, y caótico. 
+
 Š(w)=sdt ewrx (1) 
-P(w)= X(w) donde X(w) representa la transformada de Fourier de la función X(t) y P(w) representa el espectro de la función. Para movimiento periódico vamos a encontrar un conjunto discreto de líneas, mientras que en el caótico encontraremos un espectro continuo y mayor en las frecuencias bajas. En la transición de sistema periódico a caótico obtenemos un espectro oscilatorio primero y después la superposición de comportamiento oscilatorio y al fin un amplio espectro continuo típicamente caótico. 
+P(w)= X(w) 
+
+donde X(w) representa la transformada de Fourier de la función X(t) y P(w) representa el espectro de la función. Para movimiento periódico vamos a encontrar un conjunto discreto de líneas, mientras que en el caótico encontraremos un espectro continuo y mayor en las frecuencias bajas. En la transición de sistema periódico a caótico obtenemos un espectro oscilatorio primero y después la superposición de comportamiento oscilatorio y al fin un amplio espectro continuo típicamente caótico. 
+
 La principal característica del movimiento caótico, la divergencia exponencial de las trayectorias nos puede servir como pista inequívoca. Esto implica una extremadamente alta sensibilidad a las condiciones iniciales. 
+
 Tiene que ser continuo para dar lugar a movimiento aperiódico. 
+
 - 23 - 
+
 Un modo de caracterizar esta divergencia es el exponente de Lyapunov 
-X(X). Vamos a trabajar con sistemas discretos. Al trabajar con secciones de 
-Poincaré, los puntos no se mueven continuamente, sino que lo hacen de modo discreto. 
+X(X). Vamos a trabajar con sistemas discretos. Al trabajar con secciones de Poincaré, los puntos no se mueven continuamente, sino que lo hacen de modo discreto. 
+
 Xn+1 =f(x) 
 tomamos como puntos Xo y Xo+€ 
 Después de N iteraciones 
@@ -281,90 +377,152 @@ y
 N 
 + 
 No 
+
 Por ejemplo, para un punto fijo el exponente es negativo, para un ciclo límite es nulo y positivo para los atractores extraños. 
 El exponente de Lyapunov nos da una medida de la separación entre dos puntos adyacentes después de una iteración. También da una idea del número de pliegues y estiramientos. 
+
 Podemos representar el exponente de Lyapunov en función del parámetro b para la ecuación logística: 
+
 Vemos como en los puntos en los que se produce bifurcación el exponente se hace positivo. Contrariamente, en las ventanas de movimiento regular dentro de la zona caótica, el exponente se hace negativo. 
+
 - 24 - 
+
 Exponente de Lyapunov de la ecuación logística. 
+
 Para sistemas n-dimensionales tendremos un exponente de Lyapunov para cada eje. Un volumen inicial Vo se convertirá en media en: 
+
 V=V.er, that ... thn)n 
+
 Para sistemas disipativos la suma de los exponentes debe ser negativa. Si el sistema es caótico, al menos uno de los exponentes debe ser positivo. 
 Otro parámetro que nos puede decir si el sistema es o no caótico es la entropía de Kolmogorov. Su definición procede la teoría de la información de Shannon. 
+
 Sabemos de termo que la entropía es una medida del desorden del sistema y se incrementa cuando éste aumenta. 
+
 Supongamos que tenemos un sistema en el que el resultado de una medida debe estar en un el intervalo unidad. Si lo dividimos en N subintervalos, podemos asociar al i-ésimo subintervalo una probabilidad pz. La entropía del sistema se definirá: 
+
 -25 
+
 S=-Klog(p;logp ;) 
+
 Podemos definir para nuestro sistema una entropía K que nos da una medida de lo caótico que es su movimiento. Va a ser proporcional a la velocidad a la que el sistema pierde información. Por un lado tenemos una pérdida de información de las condiciones iniciales y por otro hay una aparición de información, pues de un conjunto de puntos sin estructura puede surgir la del atractor correspondiente. 
+
 Un atractor caótico crea información, crea entropía. Une orden y desorden. La creación de información equivale a la aparición de pautas. Podemos ver esto en el Apendice que hay al final del trabajo. 
+
 La entropía del. Kolmogorov está definida de forma que es nula en movimientos regulares, donde no se crea información. Es positiva para sistemas caóticos donde sí que se crea información y se vuelve infinita para sistemas aleatorios, ya que para representar el comportamiento de un sistema aleatorio necesitamos infinita información. 
+
 Supongamos que fuéramos capaces, en algún modo de hacer que un sistema tuviera un atractor de una determinada forma. Tendríamos así un sistema con memoria, capaz de guardar una forma. Esta posibilidad parece interesante. 
+
 No existe una única ruta que nos lleve desde el comportamiento regular hasta el caótico. Pero sí que existe una rica variedad de estados de inestabilidad intermedios hasta que se alcanza el caos. Algunas características típicas son: 
+
 - 26 
--Cuando un parámetro de control típico del sistema se incrementa aparecen gradualmente más frecuencias, es como si se fueran excitando gradualmente. Ocurre en láseres, osciladores y por supuesto en la turbulencia. 
+
+- Cuando un parámetro de control típico del sistema se incrementa aparecen gradualmente más frecuencias, es como si se fueran excitando gradualmente.  Ocurre en láseres, osciladores y por supuesto en la turbulencia. 
+
 - Ruelle y Takens encontraron teóricamente que un estado oscilatorio de dos frecuencias que se desarrolla en la superficie de un toroide, precedía al establecimiento del caos. Pero esta teoría se basa sólo en propiedades matemáticas del sistema y no puede ser aplicada directamente a situaciones reales. 
 - Otro fenómeno típico es la intermitencia . Algunas cantidades permanecen estáticas y de repente cambian de modo caótico, volviendo a estar 
 estáticas y otra vez caóticas, repitiéndose el proceso una y otra vez. 
-- Otra posible ruta es una sucesión de bifurcaciones, de duplicaciones del período a medida que el parámetro de control del sistema va tomando unos valores determinados. Este mismo tipo de transición se ha encontrado en muchos sistemas. También se ha observado la aparición de otros armónicos. A continuación hablaremos de la universalidad de este fenómeno. 
+
+- Otra posible ruta es una sucesión de bifurcaciones, de duplicaciones del período a medida que el parámetro de control del sistema va tomando unos valores determinados. Este mismo tipo de transición se ha encontrado en muchos sistemas. También se ha observado la aparición de otros armónicos. 
+
+A continuación hablaremos de la universalidad de este fenómeno. 
+
 -27 
-Resumiendo 
+
+## Resumiendo 
+
 Nuestra imprecisión en la medida, nos da como resultado una 
 impredecibilidad en nuestro resultado. 
+
 En los sistemas regulares si dos puntos empezaban cercanos permanecen cercanos, los errores están bajo control. En sistemas caóticos ésto no ocurre. Por ésto no existen soluciones exactas, nuestra información inicial acaba distribuyéndose por todo el atractor al cabo de un cierto tiempo. 
+
 Un atractor caótico amplifica las pequeñas fluctuaciones y acerca las trayectorias que antes estaban alejadas. Cualquier fluctuación se extiende, por eso es imposible anular el ruido. En el proceso de estirado y plegado del espacio de las fases se crea nueva información, aleatoria. 
+
 Se ha demostrado en los últimos años que muchos sistemas presentan comportamiento estocástico debido a un simple atractor caótico (reacciones químicas, fluido calentado en una caja pequeña, ritmo cardíaco, ...) 
+
 El saber que un sistema es caótico, no arregla nada, no nos da predicciones. 
+
 Produce problemas a nivel del método científico. Verificar una teoría ahora se ve más difícil. Supongamos que se trata de un proceso caótico, las predicciones se vuelven imposibles. Deberemos usar propiedades estadísticas y geométricas. Nuestro modo de hacer física ha cambiado. Antes los sistemas que no eran integrables los estudiábamos como perturbaciones a partir de los regulares. 
+
 - 28 - 
+
 Ahora sabemos el caos es algo patológico de los sistemas. En el apartado del T KAM estudiaremos ésto con más detalle. 
+
 Vemos como la interacción entre los componentes en una escala puede llevar a un comportamiento global mucho más complejo en otra escala mayor y que no puede reducirse al conocimiento de los componentes individuales. 
+
 Todas estas cuestiones pueden hacernos entender mejor la irreversibilidad 
-Todas estas cuestio 
+
+
 El mundo de los sistemas caóticos, y en general el de los no-lineales es realmente apasionante. Aparecen fenómenos nuevos, interesantes, capaces de sorprendernos, en este mundo donde ya nada despierta nuestro interés. 
+
 - 29 - 
-Universalidad 
+
+## Universalidad 
+
 En 1975 Mitchell Feigenbaum, un físico teórico de partículas, descubrió la universalidad en las sucesiones iterativas de una dimensión. El descubrimiento era que grandes clases de sistemas mostraban transiciones hacia el caos universales y medibles cuantitativamente. 
+
 Un experimento, ya clásico, en el que se encuentran pruebas de esta universalidad es el de Libchaber y Maurer. Tenemos un liquido dentro de una caja pequeña que es calentada por la parte de abajo. Podemos controlar el movimiento del sistema con el número de Raylegh R que es proporcional a la diferencia de temperaturas entre el fondo y la parte de arriba de la caja. Por supuesto el sistema es disipativo, los estados transitorios desperecerán con el tiempo. 
-Para R pequeño hay flujo de calor pero no de líquido. Pasado un valor crítico aparece movimiento de convección en la caja que da lugar a dos cilindros. Para R mayor una onda de frecuencia fo comienza a recorrer los cilindros. En el espectro de frecuencias del sistema tendremos un solo pico. Si incrementamos AT 
-aparecerá otra onda con menor amplitud y de frecuencia 
-Si hacemos aún 
-mayor AT aparecerán más ondas con frecuencias 
-amplitudes mucho 
-menores. Si volvemos a aumentar AT, el movimiento de los cilindros se vuelve turbulento. Ahora encontramos un espectro continuo con picos que destacan. Resumiendo, al aumentar el valor del parámetro de control hemos encontrado duplicaciones de período antes de que aparezca el movimiento caótico. 
+
+Para R pequeño hay flujo de calor pero no de líquido. Pasado un valor crítico aparece movimiento de convección en la caja que da lugar a dos cilindros. Para R mayor una onda de frecuencia fo comienza a recorrer los cilindros. En el espectro de frecuencias del sistema tendremos un solo pico. Si incrementamos AT aparecerá otra onda con menor amplitud y de frecuencia 
+
+Si hacemos aún mayor AT aparecerán más ondas con frecuencias amplitudes mucho menores. Si volvemos a aumentar AT, el movimiento de los cilindros se vuelve turbulento. Ahora encontramos un espectro continuo con picos que destacan. Resumiendo, al aumentar el valor del parámetro de control hemos encontrado duplicaciones de período antes de que aparezca el movimiento caótico. 
+
 - 30 
 En los experimentos existe una resolución limitada. Para resultados más precisos, podemos usar modelo matemático. Tomemos la ecuación de un oscilador no lineal: 
+
 on - 3+4x2= Acos(wa) 
-Tenemos un tiempo característico del sistema To=271. La disipación la 
-controla el parámetro k, el valor de A nos dará la amplitud del movimiento. 
+
+Tenemos un tiempo característico del sistema To=271. La disipación la controla el parámetro k, el valor de A nos dará la amplitud del movimiento. 
+
 Para muchas condiciones iniciales el sistema acaba atrapado en un ciclo límite de período To. El término disipativo hace que el sistema "olvide" las condiciones iniciales. La fuerza armónica hará que el oscilador no se pare. 
+
 Si disminuimos el valor de k observaremos duplicaciones de período. Las trayectorias se hacen más complicadas, pero siguen siendo periódicas. Encontramos que aparecen órbitas de período 2"To, igual que ocurría antes de establecerse la turbulencia en el líquido. 
+
 Realizamos una sección de Poincaré del sistema. En general se trata de ver la intersección de la trayectoria entera en el espacio de las fases con una superficie dada. En nuestro caso por ser unidimensional, será la intersección de una línea con la trayectoria del sistema, lo que nos dará un conjunto de puntos. 
-Al principio cuando sólo teníamos un ciclo de período T, la intersección sería un solo punto. Ahora tendremos muchos puntos. Si miramos localmente las intersecciones veremos que coinciden las experimentales del líquido y las de nuestro oscilador, aunque las trayectorias no se parezcan globalmente. Si 
-- 31 - 
-representamos nuestra sección de Poincaré en función del parámetro de control del sistema, obtendremos un árbol de bifurcación. 
+
+Al principio cuando sólo teníamos un ciclo de período T, la intersección sería un solo punto. Ahora tendremos muchos puntos. Si miramos localmente las intersecciones veremos que coinciden las experimentales del líquido y las de nuestro oscilador, aunque las trayectorias no se parezcan globalmente. Si representamos nuestra sección de Poincaré en función del parámetro de control del sistema, obtendremos un árbol de bifurcación. 
 Vemos que cualitativamente los hechos coinciden. El descubrimiento de Feigenbaum fue que también coincidían cuantitativamente. Dos fueron sus observaciones: 
+
 - Las diferencias entre dos valores consecutivos del parámetro de control para los que hay bifurcación tiende a un valor universal 
 P=limbi+by+ -Him 4 -4.6692... 
 i-o biti-b; 
 Ai+1 
+
 -También el cociente entre consecutivas separaciones de las dos ramas cuando hay bifurcación es universal 
 lim : -=2.5029 *** & +1 
-Tenemos que le caos aparece tras una sucesión de duplicaciones de período. 
+
+Tenemos que le caos aparece tras una sucesión de duplicaciones de período.
+
 Todo esto nos proporciona predicciones experimentales sobre valores de los parámetros de control para los que encontraremos bifurcaciones y sobre la separación de estos. Pero experimentalmente es muy difícil controlar el sistema hasta llegar a encontrar más allá de 5 6 6 bifurcaciones, lo que hace que no podamos dar las constantes con más de 2 decimales. En experimentos numéricos más complicados se ha podido llegar hasta un número de decimales que confirman totalmente los valores predichos. Por ejemplo se tiene que F-4.6692016091029909... 
+
 - 32 
+
 También existen experimentos en más de una dimensión. Por ejemplo Franceschini y Tebaldi estudiaron una truncación de las ecuaciones de Navier Stokes con 5 variables, lo que nos da un espacio de las fases de 10 dimensiones. Se encuentran duplicaciones de período en todas las secciones de Poincaré y las constantes F y a obtenidas están en perfecto acuerdo con los valores de Feigenbaum. 
+
 Podemos explicar el que los sistemas de más dimensiones se comporten como unidimensionales si recordamos que el espacio de las fases se estira en algunas direcciones, se encoge en muchas y se pliega en todas. Así el sistema puede quedar reducido a unidimensional. 
+
 Un estupendo resultado de la universalidad es que no importa lo cerca que nuestras ecuaciones estén de las reales. Mientras que el modelo esté en la misma clase de universalidad (tenga una misma forma de desarrollo en la f(x) que nos da la evolución) que el sistema real ambos tendrán una misma sucesión de duplicaciones de período. Esto significa que podemos obtener la física correcta de modelos muy simples. Pero por supuesto, no sabemos cuando dos sistemas están en la misma clase de universalidad. 
+
 Mirando el espacio de las fases vemos que las trayectorias se mueven en una zona restringida del espacio de las fases. Para trabajar con ciclos límite es más cómodo expresar cada punto como función del anterior, Xn+1=f(x.). No sabemos la expresión explícita de f(x) pero sí que tiene que caer en los extremos, es decir que va a tener un máximo en un punto interior del intervalo xc. Podemos desarrollarla alrededor de este máximo en la forma: 
 - 33 - 
-f(x)=2, +az(x-x)2 +... Sabemos del estudio de este tipo de sucesiones, que un comportamiento estable no tiene porqué implicar la existencia de un valor límite, sino que se puede establecer un ciclo periódico. 
-Como vimos tendremos bifurcación cuando la derivada de f(x) en el punto se haga en valor absoluto mayor que 1, lo que hará al punto inestable. Nuestro argumento no depende para nada de la forma explícita de f(x): aquí tenemos la universalidad de las duplicaciones de período. 
+
+f(x)=2, +az(x-x)2 +... 
+
+Sabemos del estudio de este tipo de sucesiones, que un comportamiento estable no tiene porqué implicar la existencia de un valor límite, sino que se puede establecer un ciclo periódico. 
+
+Como vimos tendremos bifurcación cuando la derivada de f(x) en el punto se haga en valor absoluto mayor que 1, lo que hará al punto inestable. 
+
+Nuestro argumento no depende para nada de la forma explícita de f(x): aquí tenemos la universalidad de las duplicaciones de período. 
+
 Pero esta universalidad no es sólo cualitativa. Para estudiar la estabilidad de un punto fijo hacemos un reescalado de su entorno. El entorno de éstos puntos queda prácticamente igual después de una iteración y un reescalado. Tras haber ampliado muchas veces los entornos, casi toda la información sobre la forma global de f(x) ha desaparecido. Nos queda una función universal g(x). Esta función se autoreproduce después de una iteración y un reescalado 
 860)=-as 81-) 
 lo que nos permite determinar a. 
+
 Resumiendo. Tenemos un sistema multidimensional. La sección de Poincaré nos permite pasar del estudio de un sistema de ecuaciones diferenciales al estudio de iteraciones discretas. La disipación reduce la dimensión hasta dejar al sistema como unidimensional. Las sucesiones de bifurcaciones tienen lugar a escalas cada vez menores. Después de n bifurcaciones la separación entre las trayectorias será de a" y prácticamente no queda nada de la estructura global del sistema. Tenemos aquí la universalidad. 
+
 - 34 
-Caos y ergodicidad. Teorema KAM.. 
+
+## Caos y ergodicidad. Teorema KAM
+
 Nada hay que preocupe más a un físico dedicado a hacer mecánica estadística, que saber si su sistema tiene comportamiento ergódico o no. 
 La mecánica estadística trata, aprovechando la enorme cantidad de partículas que forman un sistema real, de promediando, obtener información macroscópica sobre el sistema global. Esto equivale a decir que aprovechamos la gran cantidad de microestados compatibles con un macroestado para encontrar información útil sobre este último. 
 Queremos, entonces, hacer promedios sobre los microestados en los que se encuentra el sistema. Para ello debemos saber cuales son éstos. Al conjunto de los estados posibles lo llamaremos espacio accesible y es donde promediaremos la función dinámica. 
@@ -471,7 +629,9 @@ Hasta hace poco se pensaba que la ergodicidad era cosa de los sistemas de muchas
 De todas formas no se ha probado nada. No sabemos qué zonas de inestabilidad son ergódicas. Quizás con mayores precisiones de integración los puntos aparentemente aleatorios llevaran un cierto orden. 
 Para pequeñas amplitudes sólo intervienen unas pocas resonancias, la mecánica estadística puede predecir solo unas pocas de las más simples magnitudes. Al aumentar la amplitud intervienen más resonancias permitiéndonos predecir más cantidades (pero no todas) correctamente. 
 - 49 - 
-Caos cuántico 
+
+## Caos cuántico 
+
 La física cuántica no relativista está basada en la ecuación de Schrödinger, que es una ecuación diferencial cuyas soluciones nos darán distribuciones de probabilidad de cantidades observables. Algo que diferencia grandemente la física cuántica de la clásica son las relaciones de incertidumbre de Heisemberg entre dos variables conjugadas de una partícula (por ejemplo la posición y el momento o la energía y el tiempo) 
 Axapel 
 Esto nos impide conocer simultáneamente sus valores. 
@@ -481,7 +641,9 @@ Por ejemplo una partícula dentro de una caja bidimensional con forma de pista d
 - 50 - 
 Podemos también estudiar átomos Rydberg, en los que un electrón están tan excitado que podemos suponerlo en un espectro continuo. Si añadimos al sistema un campo de microondas producimos la ionización del electrón que dependerá grandemente de la amplitud del campo y débilmente de la frecuencia. Esta fenómeno se ha simulado con éxito por medio de un modelo clásico. En el modelo encontramos comportamiento caótico para una amplitud mayor que un cierto valor crítico. Para estos valores de amplitud se producía la ionización en el sistema real. Para explicarlo podemos suponer que las trayectorias vagan por el espacio de las fases dando lugar a un mecanismo de difusión haciendo que el electrón se escape. 
 - 51 - 
-Apendice A: Fractales. 
+
+## Apéndice A: Fractales
+
 Supongamos que miramos un objeto con un microscopio de resolución y aumento ilimitados. Si el objeto fuera un fractal, al incrementar el aumento obtendríamos cada vez más detalles. Pero la estructura observada sería totalmente similar a la que teníamos con menor aumento. Decimos que el objeto es autosimilar. Los objetos fractales son autosimilares, tienen simetría ante un cambio de escala. 
 Conjunto de Cantor. D=0.631. 
 El concepto de autosimilitud no es nuevo en física. Se había estudiado en detalle en las propiedades críticas de las transiciones de fase. Aquí la autosimilitud se consideraba como una peculiaridad de la competición entre orden y desorden a la temperatura de la transición. Podemos ver que es mucho más común y aparece en muchos fenómenos de equilibrio y no equilibrio, aparentemente no relacionados con las transiciones de fase. 
@@ -529,7 +691,8 @@ Esta última propiedad es la que permite que los atractores caóticos (gracias a
 - 55 - 
 
 
-Apéndice B: Atractor de Lorenz. 
+## Apéndice B: Atractor de Lorenz
+
 Como aplicación y a la vez como ejercicio, me propuse reproducir una ilustración que encontré en el artículo "Caos" de Crutchfield. En ella se veía como la evolución en un atractor caótico depende fuertemente de las condiciones iniciales. Partiendo de muchos puntos arbitrariamente cercanos, podemos encontrar en ellos trayectorias completamente distintas. 
 Para ello tomamos como parámetros del sistema de Lorenz: 
 0=10, b= , R-28. 
