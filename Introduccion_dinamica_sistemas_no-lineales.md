@@ -34,7 +34,7 @@ INDICE:
 1. [CAOS CUANTICO](./Introduccion_dinamica_sistemas_no-lineales.md#caos-cu%C3%A1ntico)
 [APÉNDICE A: FRACTALES](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-a-fractales)
 [APÉNDICE B: ATRACTOR DE LORENZ](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-b-atractor-de-lorenz)
-BIBLIOGRAFIA
+1. [BIBLIOGRAFIA](./Introduccion_dinamica_sistemas_no-lineales.md#bibliograf%C3%ADa)
 
 ## Introducción
 
@@ -46,7 +46,6 @@ Newton montó un universo mecánico. Laplace llegó a pensar en "una inteligenci
 
 Cuando comenzamos a considerar sistemas con muchos grados de libertad todo cambia. Tenemos que recurrir al cálculo de probabilidades. Los sistemas de pocos grados parecen deterministas y los de muchos probabilistas. Es como si la complejidad se debiera sólo a la asociación de muchas cosas simples. 
  
-
 Poincaré fue el primero en darse cuenta de que un mismo sistema podía 
 presentar dos tipos de movimiento bien diferenciados para cambios arbitrariamente pequeños de un parámetro en su hamiltoniano. Incluso podía presentar movimiento regular y caótico para distinta condiciones iniciales. El mismo demostró que un sistema tan simple como el de los tres cuerpos ofrecía comportamiento impredecible (físicamente decimos que no es integrable). 
 
@@ -58,28 +57,19 @@ En 1960 un físico llamado Lorenz estaba trabajando sobre predicción metereoló
 
 Su ordenador usaba para los cálculos 2 decimales más de los que daba como resultado, para que así los números representados fueran todos correctos. Las calculadoras hacen lo mismo. 
 
-
-
 Estamos acostumbrados a trabajar con sistemas lineales. La propagación de los errores en ellos es lineal. Pero la mayoría de los sistemas reales son no lineales. En éstos, datos iniciales arbitrariamente cercanos conducen a trayectorias totalmente distintas. En estos sistemas encontramos entrelazados movimientos regulares y movimientos impredecibles (caóticos). 
 
 En las ecuaciones diferenciales no-lineales las perturbaciones pequeñas no se mantienen pequeñas, sino que crecen i y de modo exponencial !. Decimos que las ecuaciones no-lineales tienen una gran dependencia con las condiciones iniciales. 
 
 Todo el mundo se sorprendería si supiera que un sistema tan simple e inocente como un péndulo es capaz de presentar un comportamiento caótico si se le somete a una fuerza armónica. El término sin(O) es el responsable de todo con su comportamiento no lineal. 
 
-. Son muchos los sistemas en los que se presenta una fuerte dependencia a las condiciones iniciales. Un ejemplo claro es el tiempo atmosférico. De ahí viene su impredecibilidad. Cualquier pequeña perturbación que escape a nuestra medida es capaz de adueñarse del comportamiento global del sistema. Los metereólogos lo llaman el efecto mariposa. Supongamos que conocemos las ecuaciones que rigen el tiempo (por supuesto serían no-lineales) y que somos capaces de conocer en un momento dado el estado exacto de nuestro sistema. El batir de una mariposa en Australia daría lugar a una perturbación que iría creciendo. En unos meses la perturbación habría llegado a cualquier parte del mundo y se adueñaría del comportamiento atmosférico. Nuestro pronóstico fallaría. 
-
-
-Estamos acostumbrados a trabajar con sistemas lineales. La propagación de los errores en ellos es lineal. Pero la mayoría de los sistemas reales son no lineales. En éstos, datos iniciales arbitrariamente cercanos conducen a trayectorias totalmente distintas. En estos sistemas encontramos entrelazados movimientos regulares y movimientos impredecibles (caóticos). 
-
-En las ecuaciones diferenciales no-lineales las perturbaciones pequeñas no se mantienen pequeñas, sino que crecen i y de modo exponencial !. Decimos  que las ecuaciones no-lineales tienen una gran dependencia con las condiciones iniciales. 
-
-Todo el mundo se sorprendería si supiera que un sistema tan simple e inocente como un péndulo es capaz de presentar un comportamiento caótico si se le somete a una fuerza armónica. El término sin(O) es el responsable de todo con su comportamiento no lineal. 
-
-. Son muchos los sistemas en los que se presenta una fuerte dependencia a las condiciones iniciales. Un ejemplo claro es el tiempo atmosférico. De ahí viene su impredecibilidad. Cualquier pequeña perturbación que escape a nuestra medida es capaz de adueñarse del comportamiento global del sistema. Los metereólogos lo llaman el efecto mariposa. Supongamos que conocemos las ecuaciones que rigen el tiempo (por supuesto serían no-lineales) y que somos capaces de conocer en un momento dado el estado exacto de nuestro sistema. El batir de una mariposa en Australia daría lugar a una perturbación que iría creciendo. En unos meses la perturbación habría llegado a cualquier parte del mundo y se adueñaría del comportamiento atmosférico. Nuestro pronóstico fallaría. 
+Son muchos los sistemas en los que se presenta una fuerte dependencia a las condiciones iniciales. Un ejemplo claro es el tiempo atmosférico. De ahí viene su impredecibilidad. Cualquier pequeña perturbación que escape a nuestra medida es capaz de adueñarse del comportamiento global del sistema. Los metereólogos lo llaman el efecto mariposa. Supongamos que conocemos las ecuaciones que rigen el tiempo (por supuesto serían no-lineales) y que somos capaces de conocer en un momento dado el estado exacto de nuestro sistema. El batir de una mariposa en Australia daría lugar a una perturbación que iría creciendo. En unos meses la perturbación habría llegado a cualquier parte del mundo y se adueñaría del comportamiento atmosférico. Nuestro pronóstico fallaría. 
 
 
 Los fluidos son otro claro ejemplo, su comportamiento caótico se debe al término no-lineal (7-7)y de la ecuación de Navier-Stokes: 
+
 +(võ] = - Løp+vi 
+
 donde p es la presión, v es la viscosidad y p la densidad. 
 
 Pero no sólo se ha encontrado comportamiento caótico en sistemas tan físicos como los citados. En campos tan lejanos de la física como la economía (precios de algunos productos) o incluso en el ritmo cardíaco se han encontrado pautas de movimiento caótico. 
@@ -91,8 +81,9 @@ Pero la física funciona. Nuestra vida está llena de un tecnología que nuestra
 
 ## ¿Qué es el caos? 
 
-Tenemos dos tipos de movimiento: el regular caracterizado por una cierta "suavidad" en la trayectoria. Existen un número adecuado de constantes del movimiento lo que hace que las ecuaciones del movimiento sean integrables. Su 
-espectro en frecuencias es discreto. 
+Tenemos dos tipos de movimiento: el regular caracterizado por una cierta "suavidad" en la trayectoria. Existen un número adecuado de constantes del movimiento lo que hace que las ecuaciones del movimiento sean integrables. 
+
+Su espectro en frecuencias es discreto. 
 
 El otro tipo de movimiento es el caótico. En él nunca aparece una pauta regular, que se repita. Su espectro debe ser continuo. Bajo este tipo de movimiento tenemos una fuerte dependencia a las condiciones iniciales. Esta dependencia es la que nos echa por tierra las predicciones a largo plazo. En sólo unos instante el error ha crecido y es mayor que nuestra medida. 
 
@@ -100,9 +91,7 @@ Nos sentimos tentados a simplificar el esquema diciendo que el movimiento regula
 
 La inestabilidad del caos es local. La encontramos en cada punto. De ahí la divergencia exponencial de las trayectorias. En cada punto el sistema puede moverse en direcciones opuestas. Diferencias infinitesimales le harán evolucionar de modos totalmente distintos. 
 
-Si las ecuaciones del sistema son integrables, nuestro sistema tendrá una solución explícita. Dado un estado inicial, lo metemos en la "fórmulita" y obtenemos 
-
-cual será el estado final para un tiempo t. En los sistemas no integrables, no tenemos solución explícita. Dado un estado inicial tenemos que pasar por todos los intermedios para llegar hasta el estado final en t. Aquí no tenemos el atajo de las fórmulas. Al ser las ecuaciones no lineales en cada paso de nuestra integración el error se irá incrementando hasta llegar a tapar nuestro resultado. 
+Si las ecuaciones del sistema son integrables, nuestro sistema tendrá una solución explícita. Dado un estado inicial, lo metemos en la "fórmulita" y obtenemos cual será el estado final para un tiempo t. En los sistemas no integrables, no tenemos solución explícita. Dado un estado inicial tenemos que pasar por todos los intermedios para llegar hasta el estado final en t. Aquí no tenemos el atajo de las fórmulas. Al ser las ecuaciones no lineales en cada paso de nuestra integración el error se irá incrementando hasta llegar a tapar nuestro resultado. 
 
 Los sistemas caóticos también son deterministas, pues están regidos por ecuaciones del movimiento como lo estaban los sistemas con movimientos regulares. Dado un estado inicial tenemos determinado el final. El tener una precisión determinada en la medida y en el cálculo van a hacer que no sepamos exactamente cual es el estado inicial ni por supuesto cuales son los intermedios durante nuestro cálculo. Nuestra finitud es la responsable de la impredecibilidad de los sistemas caóticos. 
 
@@ -150,7 +139,9 @@ b) Puntos periódicos
 - 10 - 
 
 c) Puntos eventualmente periódicos, son preimagen de un punto periódico, es decir existe un m para el que se cumple que f(x) es periódico. 
+
 d) Puntos asintóticamente periódicos, la sucesión contiene una parcial que converge a un punto periódico. 
+
 e) Punto aperiódico que no es de ninguna de las clases anteriores. La sucesión será estocástica o aperiódica. 
 
 También podemos estudiar propiedades de f en función de b. Así podemos fijar nuestra atención en un punto fijo £(b) y en su evolución en función de b. Puede pasar de ser estable a ser inestable dependiendo del valor de ^(b). 
@@ -185,8 +176,7 @@ Más importante aún que este hallazgo fue encontrar en una gran clase de sistem
 
 Este fue el descubrimiento de la universalidad de las duplicaciones de período en las transiciones al caos. Posteriormente hablaremos más extensamente de este tema. 
 
-El intervalo ( 
-64) contiene infinitas pequeñas ventanas en la región de 
+El intervalo ( 64) contiene infinitas pequeñas ventanas en la región de 
 movimiento caótico en las que para ciertos valores de b aparecen ciclos estables de período m. Por ejemplo desde b=3.8284 hasta b= 3.8415 encontramos un ciclo 
 
 - 12 
@@ -228,18 +218,6 @@ Decimos que una región (de menor dimensión que nuestro espacio fásico) es un 
 
 Un atractor es una configuración estable, porque se mantiene en el tiempo. 
 2 Podemos considerarlo como un acercamiento asintótico. 
-
-- 15 - 
-
-Oscilador de Van der Pol. 
-
-en el que a veces término de amortiguamiento es negativo y a veces positivo. Sin depender de la condición inicial el sistema queda confinado a una sucesión de estados que se repiten. La órbita es cerrada. Tenemos un ciclo límite. El sistema "olvida" las condiciones iniciales, en el sentido de que su destino final del sistema no depende de ellas. Tenemos que el ciclo límite atrae hacia así a la trayectoria del sistema. 
-
-Decimos que una región (de menor dimensión que nuestro espacio fásico) es un atractor si el movimiento del sistema tiende a acercarse a esa zona quedando confinado en ella después de un cierto tiempo. El atractor más sencillo es el punto hacia el que tiende un péndulo con amortiguamiento. 
-
-Un atractor es una configuración estable, porque se mantiene en el tiempo. 
-2 Podemos considerarlo como un acercamiento asintótico. 
-
 
 - 15 - 
 
@@ -557,7 +535,9 @@ La mayoría de los movimientos periódicos con frecuencias inconmensurables cont
 La perturbación va a introducir pequeñas zonas de resonancia en las cuales el sistema tendrá comportamiento caótico. A medida que la perturbación aumente las superficies se van destruyendo cerca de estas zonas. Cuando dos zonas vecinas se solapan, la superficie es completamente destruida y la trayectoria del sistema 
 
 Tenemos una situación idéntica en la distribución de los asteroides en el sistema solar. Fue estudiado por Wisdom. Sus órbitas son perturbadas por Júpiter. Si estudiamos su distribución frente a la razón de la frecuencia angular del asteroide y la de Júpiter, encontramos que para razones racionales o cercanas no hay asteroides y sí para las irracionales. 
+
 - 37 - 
+
 puede vagar por las dos libremente. Si seguimos aumentado la perturbación llegarán a solaparse todas las zonas de resonancia y la región entera se volverá caótica. 
 
 En un comportamiento determinista tenemos al sistema confinado en unas órbitas determinadas. En la transición a uno caótico estas órbitas empiezan a deformarse hasta llegar a llenar el espacio accesible. Si las órbitas llegaran a llenarlo completamente, podríamos tener comportamiento ergódico en el sistema. 
@@ -620,6 +600,7 @@ nnd
 suman. Se trata de un fenómeno de resonancia. 
 
 El movimiento del sistema será el resultado del solapamiento de todas estas zonas de resonancia, siendo muy complicado, quizás ergódico. 
+
 Si V es pequeño f lo será y la banda de frecuencias también. 
 
 Si V es grande (o la energía se incrementa lo suficiente), la medida de las zonas de solapamiento de las resonancias se incrementa hasta que casi el espacio entero esta lleno de trayectorias erráticas. 
@@ -627,7 +608,9 @@ Si V es grande (o la energía se incrementa lo suficiente), la medida de las zon
 El Teorema KAM indica, no prueba, la posibilidad de transición de un movimiento periódico a otro predominantemente caótico y casi ergódico. 
 Existen experimentos con ordenador. 
 
-Dos astrónomos Henon y Heiles en 1983 haciendo un modelo de la distribución de estrellas dentro de la galaxias. Trataban de ver si existía alguna constante del movimiento además de la energía (si existiera, todas las trayectorias estarían confinadas en superficies bidimensionales. Al hacer una sección de Poincaré encontraríamos curvas. Si no tuviéramos esta constante la trayectoria sería tridimensional y sólo encontraríamos puntos dispersos aleatoriamente). EI hamiltoniano que usaron era 
+Dos astrónomos Henon y Heiles en 1983 haciendo un modelo de la distribución de estrellas dentro de la galaxias. Trataban de ver si existía alguna constante del movimiento además de la energía (si existiera, todas las trayectorias estarían confinadas en superficies bidimensionales. Al hacer una sección de Poincaré encontraríamos curvas. 
+
+Si no tuviéramos esta constante la trayectoria sería tridimensional y sólo encontraríamos puntos dispersos aleatoriamente). EI hamiltoniano que usaron era 
 
 - 40 - 
 
@@ -769,7 +752,9 @@ Si viajamos en avión, veremos más golfos y cabos dentro de los que veíamos an
 Vamos a definir todo esto con un poco de más rigor. 
 
 Incluso nosotros mismos tenemos estructuras autosimilares en nuestro cuerpo como el aparato circulatorio o los pulmones. (Ver "Caos y fractales en la fisiologia humana" Goldberger, Rigney y West en Investigación y Ciencia). 
+
 - 53 - 
+
 Matemáticamente un fractal es un objeto en el que la dimensión Haussdorf es mayor que la topológica. La dimensión topológica es la normal, a la que estamos acostumbrados. Vamos a definir ahora la dimensión Haussdorf. 
 
 Supongamos que tenemos nuestro objeto en un espacio de p dimensiones. 
@@ -816,6 +801,7 @@ lados por cuatro y dividimos su longitud por tres. La longitud sería L =lim
 
 Y el área es finita pues cabe en un círculo de radio el lado inicial. 
 Esta última propiedad es la que permite que los atractores caóticos (gracias a su naturaleza fractal, el de Lorenz tiene dimensión 2.06 ) puedan contener en un volumen finito a las trayectorias que divergen exponencialmente unas de otras. 
+
 - 55 - 
 
 
@@ -860,7 +846,9 @@ x0=x yO=y 20=z GOSUB paso
 GOSUB pintar.line > NEXT BEEP GOSUB pausa 
 REM Ahora hacemos evolucionar DA puntos IT iteraciones 
 iter: da=100 
+
 -57 
+
 it=10000 
 DIM x1(da), y1(da), z1(da) DTM asignamos posiciones aleatorias FOR c=1 TO da 
 x1(c)=10+RND/5 y1(c)=1+RND/5 
