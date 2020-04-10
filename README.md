@@ -2,9 +2,7 @@
 
 
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/kevinmgill/44583965185/" title="Voyage of the Moons"><img src="https://live.staticflickr.com/1919/44583965185_ec68fe0838_w.jpg" width="400" height="400" alt="Voyage of the Moons"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-by [Kevin Gil](https://www.flickr.com/photos/kevinmgill/44583965185/)
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/kevinmgill/44583965185/" title="Voyage of the Moons"><img src="https://live.staticflickr.com/1919/44583965185_ec68fe0838_w.jpg" width="400" height="400" alt="Voyage of the Moons"></a> by [Kevin Gil](https://www.flickr.com/photos/kevinmgill/44583965185/)
 
 
 En esta foto vemos los dos tipos de movimiento. Por un lado tenemos el movimiento regular de lo y Europa alrededor de Júpiter. Por otro lado la Gran Mancha Roja, un enorme remolino, que presenta movimiento turbulento, típicamente caótico. 
