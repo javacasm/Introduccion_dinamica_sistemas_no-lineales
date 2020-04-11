@@ -12,28 +12,31 @@ En esta foto vemos los dos tipos de movimiento. Por un lado tenemos el movimient
 ## De por qué perdonar los errores de los metereólogos, y por qué siempre los cometerán. 
 
 Me resistía a poner la palabra caos en el título para no dar imagen de desordenado. Tampoco me parecía bien usar el término sin haberlo definido previamente. 
+
 Vamos a hacer un viaje sobre la fauna de los sistemas no lineales viendo algunos de los ejemplos más representativos. Algunos de ellos se han quedado en el tintero, en algún sitio tendriamos que terminar. 
+
 El tema realmente es apasionante y pienso seguir profundizando en él. 
+
 José Antonio Vacas Martínez @javacasm
 
-1992, 4o de Física Teórica 
+1992, 4º de Física Teórica 
 
-![Licencia CC by SA](./images/Licencia_CC.jpg)
+![Licencia CC by SA](./images/Licencia_CC.png)
 
 
 INDICE: 
-1. [INTRODUCCION](./Introduccion_dinamica_sistemas_no-lineales.md#introducci%C3%B3n)
-1. [¿QUE ES EL CAOS?](./Introduccion_dinamica_sistemas_no-lineales.md#qu%C3%A9-es-el-caos)
-1. [ECUACION LOGISTICA](./Introduccion_dinamica_sistemas_no-lineales.md#ecuaci%C3%B3n-log%C3%ADstica)
-1. [ATRACTORES](./Introduccion_dinamica_sistemas_no-lineales.md#atractores)
-1. [¿CAOS?](./Introduccion_dinamica_sistemas_no-lineales.md#caos)
-1. [RESUMIENDO...](./Introduccion_dinamica_sistemas_no-lineales.md#resumiendo)
-1. [UNIVERSALIDAD](./Introduccion_dinamica_sistemas_no-lineales.md#universalidad)
-1. [CAOS Y ERGODICIDAD. Teorema KAM](./Introduccion_dinamica_sistemas_no-lineales.md#caos-y-ergodicidad-teorema-kam)
-1. [CAOS CUANTICO](./Introduccion_dinamica_sistemas_no-lineales.md#caos-cu%C3%A1ntico)
-[APÉNDICE A: FRACTALES](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-a-fractales)
-[APÉNDICE B: ATRACTOR DE LORENZ](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-b-atractor-de-lorenz)
-1. [BIBLIOGRAFIA](./Introduccion_dinamica_sistemas_no-lineales.md#bibliograf%C3%ADa)
+1. [Introducción](./Introduccion_dinamica_sistemas_no-lineales.md#introducci%C3%B3n)
+1. [¿Qué es el caos?](./Introduccion_dinamica_sistemas_no-lineales.md#qu%C3%A9-es-el-caos)
+1. [Ecuación logística](./Introduccion_dinamica_sistemas_no-lineales.md#ecuaci%C3%B3n-log%C3%ADstica)
+1. [Atractores](./Introduccion_dinamica_sistemas_no-lineales.md#atractores)
+1. [Caos?](./Introduccion_dinamica_sistemas_no-lineales.md#caos)
+1. [Resumiendo...](./Introduccion_dinamica_sistemas_no-lineales.md#resumiendo)
+1. [Universidad](./Introduccion_dinamica_sistemas_no-lineales.md#universalidad)
+1. [Caos y ergodicidad. Teorema KAM](./Introduccion_dinamica_sistemas_no-lineales.md#caos-y-ergodicidad-teorema-kam)
+1. [Caos cuántico](./Introduccion_dinamica_sistemas_no-lineales.md#caos-cu%C3%A1ntico)
+[Apéndice A: Fractales](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-a-fractales)
+[Apéndice B: Atractor de Lorenz](./Introduccion_dinamica_sistemas_no-lineales.md#ap%C3%A9ndice-b-atractor-de-lorenz)
+1. [Bibliografía](./Introduccion_dinamica_sistemas_no-lineales.md#bibliograf%C3%ADa)
 
 ## Introducción
 
@@ -52,24 +55,22 @@ La relatividad de Einstein acabó con el tiempo absoluto de Newton. La mecánica
 
 Con la llegada en este siglo de los ordenadores, parecía que todo iba a ser calculable. Quizás no conociéramos las condiciones iniciales exactas, pero sí las conocíamos aproximadamente. Nuestros resultados no serían exactos, pero sí bastante aproximados. 
 
-En 1960 un físico llamado Lorenz estaba trabajando sobre predicción metereológica. Hizo un modelo de tiempo atmosférico con doce ecuaciones diferenciales no lineales introduciéndolo en su ordenador. Un día le dio los valores que había obtenido el día anterior, esperando así poder continuar con su tarea!. Al principio obtenía valores similares a los ya obtenidos, pero después el comportamiento del sistema comenzó a separarse del esperado llegando a evolucionar de modo totalmente distinto a como lo había hecho el día de antes. Lorenz intuyó que el problema estaba en que los sistemas no-lineales tienen fuerte dependencia con las condiciones iniciales. 
+En 1960 un físico llamado Lorenz estaba trabajando sobre predicción metereológica. Hizo un modelo de tiempo atmosférico con doce ecuaciones diferenciales no lineales introduciéndolo en su ordenador. Un día le dio los valores que había obtenido el día anterior, esperando así poder continuar con su tarea (Su ordenador usaba para los cálculos 2 decimales más de los que daba como resultado, para que así los números representados fueran todos correctos. Las calculadoras hacen lo mismo). Al principio obtenía valores similares a los ya obtenidos, pero después el comportamiento del sistema comenzó a separarse del esperado llegando a evolucionar de modo totalmente distinto a como lo había hecho el día de antes. Lorenz intuyó que el problema estaba en que los sistemas no-lineales tienen fuerte dependencia con las condiciones iniciales. 
 
-Su ordenador usaba para los cálculos 2 decimales más de los que daba como resultado, para que así los números representados fueran todos correctos. Las calculadoras hacen lo mismo. 
+Estamos acostumbrados a trabajar con sistemas lineales. La propagación de los errores en ellos es lineal. Pero la mayoría de los sistemas reales son no lineales. En éstos, datos iniciales arbitrariamente cercanos conducen a trayectorias totalmente distintas. En estos sistemas encontramos entrelazados movimientos regulares y movimientos impredecibles (**caóticos**). 
 
-Estamos acostumbrados a trabajar con sistemas lineales. La propagación de los errores en ellos es lineal. Pero la mayoría de los sistemas reales son no lineales. En éstos, datos iniciales arbitrariamente cercanos conducen a trayectorias totalmente distintas. En estos sistemas encontramos entrelazados movimientos regulares y movimientos impredecibles (caóticos). 
-
-En las ecuaciones diferenciales no-lineales las perturbaciones pequeñas no se mantienen pequeñas, sino que crecen i y de modo exponencial !. Decimos que las ecuaciones no-lineales tienen una gran dependencia con las condiciones iniciales. 
+En las ecuaciones diferenciales no-lineales las perturbaciones pequeñas no se mantienen pequeñas, sino que crecen ¡**y de modo exponencial**!. Decimos que las ecuaciones no-lineales tienen una gran dependencia con las condiciones iniciales. 
 
 Todo el mundo se sorprendería si supiera que un sistema tan simple e inocente como un péndulo es capaz de presentar un comportamiento caótico si se le somete a una fuerza armónica. El término sin(O) es el responsable de todo con su comportamiento no lineal. 
 
 Son muchos los sistemas en los que se presenta una fuerte dependencia a las condiciones iniciales. Un ejemplo claro es el tiempo atmosférico. De ahí viene su impredecibilidad. Cualquier pequeña perturbación que escape a nuestra medida es capaz de adueñarse del comportamiento global del sistema. Los metereólogos lo llaman el efecto mariposa. Supongamos que conocemos las ecuaciones que rigen el tiempo (por supuesto serían no-lineales) y que somos capaces de conocer en un momento dado el estado exacto de nuestro sistema. El batir de una mariposa en Australia daría lugar a una perturbación que iría creciendo. En unos meses la perturbación habría llegado a cualquier parte del mundo y se adueñaría del comportamiento atmosférico. Nuestro pronóstico fallaría. 
 
 
-Los fluidos son otro claro ejemplo, su comportamiento caótico se debe al término no-lineal (7-7)y de la ecuación de Navier-Stokes: 
+Los fluidos son otro claro ejemplo, su comportamiento caótico se debe al término no-lineal ![término no linel](./images/NonLinearTerm.png) de la ecuación de Navier-Stokes: 
 
-+(võ] = - Løp+vi 
+![Ecuación de Navier-Stokes](./images/Navier-Stokes.png)
 
-donde p es la presión, v es la viscosidad y p la densidad. 
+donde **p** es la presión, **ν** es la viscosidad y **ρ** la densidad. 
 
 Pero no sólo se ha encontrado comportamiento caótico en sistemas tan físicos como los citados. En campos tan lejanos de la física como la economía (precios de algunos productos) o incluso en el ritmo cardíaco se han encontrado pautas de movimiento caótico. 
 
@@ -80,9 +81,7 @@ Pero la física funciona. Nuestra vida está llena de un tecnología que nuestra
 
 ## ¿Qué es el caos? 
 
-Tenemos dos tipos de movimiento: el regular caracterizado por una cierta "suavidad" en la trayectoria. Existen un número adecuado de constantes del movimiento lo que hace que las ecuaciones del movimiento sean integrables. 
-
-Su espectro en frecuencias es discreto. 
+Tenemos dos tipos de movimiento: el regular caracterizado por una cierta "suavidad" en la trayectoria. Existen un número adecuado de constantes del movimiento lo que hace que las ecuaciones del movimiento sean integrables. Su espectro en frecuencias es discreto. 
 
 El otro tipo de movimiento es el caótico. En él nunca aparece una pauta regular, que se repita. Su espectro debe ser continuo. Bajo este tipo de movimiento tenemos una fuerte dependencia a las condiciones iniciales. Esta dependencia es la que nos echa por tierra las predicciones a largo plazo. En sólo unos instante el error ha crecido y es mayor que nuestra medida. 
 
@@ -94,50 +93,47 @@ Si las ecuaciones del sistema son integrables, nuestro sistema tendrá una soluc
 
 Los sistemas caóticos también son deterministas, pues están regidos por ecuaciones del movimiento como lo estaban los sistemas con movimientos regulares. Dado un estado inicial tenemos determinado el final. El tener una precisión determinada en la medida y en el cálculo van a hacer que no sepamos exactamente cual es el estado inicial ni por supuesto cuales son los intermedios durante nuestro cálculo. Nuestra finitud es la responsable de la impredecibilidad de los sistemas caóticos. 
 
-Vemos así que un sistema determinista puede producir mucho más que movimiento periódico. El caos es generado por reglas fijas que en sí mismas no tiene ningún elemento de azar. El caos es determinista. 
+Vemos así que un sistema determinista puede producir mucho más que movimiento periódico. El caos es generado por reglas fijas que en sí mismas no tiene ningún elemento de azar. **El caos es determinista**. 
  
 Un buen ejemplo de ello es la ecuación logística. 
 
 
-## Ecuación logística. 
+## Ecuación logística
+
 Existen sistemas aparentemente simples y que son capaces de producir comportamiento caótico. Un ejemplo es la ecuación logística. Se trata de un sistema discreto iterativo, la salida se vuelve a introducir y lo que estudiamos es el comportamiento de la sucesión así obtenida. Cuando trabajamos en una sección de Poincaré (calculamos la intersección de la trayectoria con una superficie determinada), obtenemos una evolución discreta del sistema. La forma explícita de la ecuación logística es: 
 
-Xo+1=bX,(1-x) 
+![Ecuación logística](./images/LogisticEquation.png)
 
 donde X puede variar entre 0 y 1. b actúa como parámetro de control (nos determinará el comportamiento del sistema) y puede tomar valores entre 0 y 4. 
 
-Aunque se trata de una sencilla sucesión discreta nos puede servir para ilustrar muchas de las características de sistemas caóticos. Esta ecuación puede servirnos como un modelo ecológico simple. La variable X puede representar la cantidad de individuos de una especie Podemos estudiar su evolución para un valor inicial Xo y un b dados. Si X se hace muy grande (cercana a 1) el alimento escaseará y la población empezará a disminuir como nos indica el término (1-x). 
+Aunque se trata de una sencilla sucesión discreta nos puede servir para ilustrar muchas de las características de sistemas caóticos. Esta ecuación puede servirnos como un modelo ecológico simple. La variable X puede representar la cantidad de individuos de una especie. Podemos estudiar su evolución para un valor inicial Xo y un b dados. Si X se hace muy grande (cercana a 1) el alimento escaseará y la población empezará a disminuir como nos indica el término (1-x). 
 
 Con una simple calculadora podemos realizar unas cuantas iteraciones de la fórmula. Nos podemos sorprender de los resultados. Vamos a tratarlo de un modo más matemático y empezaremos con un poco de teoría de sucesiones iterativas unidimensionales. 
 
--9 
-
 Consideremos la sucesión como una función: 
 
-x'=f(x) 
+![x'=f(x)](./images/derivadaXfx.png)
 
 y supondremos que es lo bastante suave como para poder derivarla. 
-Un punto fijo será aquel en el que se cumple que f(E)=E. La posibilidad que le sigue en complejidad es una órbita o ciclo, que está formada por puntos periódicos. Un punto periódico & de orden m va a ser un punto fijo de f"(x), siendo m el menor número entero para el que esto se cumple. f($), f(E), ... ,1" (3) son también puntos periódicos de orden m. 
+Un punto fijo será aquel en el que se cumple que ![f(E)=E](./images/f(xi)=xi.png). La posibilidad que le sigue en complejidad es una órbita o ciclo, que está formada por puntos periódicos. Un punto periódico ξ de orden m va a ser un punto fijo de ![fmdex](./images/fmdex.png), siendo m el menor número entero para el que esto se cumple. ![](./images/ff2fm.png) son también puntos periódicos de orden m. 
 
-Para conocer el comportamiento cerca de un punto fijo , estudiaremos el valor de î=f'(E) (el símbolo se refiere a la derivada de f respecto de su variable). 
+Para conocer el comportamiento cerca de un punto fijo ξ, estudiaremos el valor de ![](./images/lambda=fx.png) (el símbolo se refiere a la derivada de f respecto de su variable). 
 
-Si tenemos en cuenta el carácter iterativo de nuestra sucesión veremos que podemos clasificar los puntos fijos según el valor de a en: 
+Si tenemos en cuenta el carácter iterativo de nuestra sucesión veremos que podemos clasificar los puntos fijos según el valor de λ en: 
 
-- 19/<1 de atracción o estables. 
-- 121=0 superestables. 
-- a>1 de repulsión o inestables 
-- 12|=1 neutrales 
+- |λ| < 1 de atracción o estables. 
+- |λ| = 0 superestables. 
+- |λ| > 1 de repulsión o inestables 
+- |λ| = 1 neutrales 
 
-Podemos hacer exactamente la misma clasificación para las órbitas periódicas. Si Xos...,Xm-1 son los miembros de un ciclo de período m. Para estudiar su evolución definiremos ahora =f'(X.)f'(X,)...f'(X. -_-) 
+Podemos hacer exactamente la misma clasificación para las órbitas periódicas. Si ![](./images/X0Xm.png) son los miembros de un ciclo de período m. Para estudiar su evolución definiremos ahora ![lambda=f'X0f'Xm](./images/lambda=f'X0f'Xm.png)
 Con todo esto podemos clasificar los puntos en: 
 
 a) Puntos fijos 
 
 b) Puntos periódicos 
 
-- 10 - 
-
-c) Puntos eventualmente periódicos, son preimagen de un punto periódico, es decir existe un m para el que se cumple que f(x) es periódico. 
+c) Puntos eventualmente periódicos, son preimagen de un punto periódico, es decir existe un m para el que se cumple que ![](./images/fmdx.png) es periódico. 
 
 d) Puntos asintóticamente periódicos, la sucesión contiene una parcial que converge a un punto periódico. 
 
