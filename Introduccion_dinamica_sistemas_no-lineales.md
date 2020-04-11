@@ -9,8 +9,10 @@ En esta foto vemos los dos tipos de movimiento. Por un lado tenemos el movimient
 
 ![Dedicatoria "para mis Papis"](./images/dedicatoria.jpg)
 
+<img src=./images/dedicatoria.jpg  width="400">
 
-## Del porqué perdonarle los errores a los metereólogos, y por qué siempre los cometerán. 
+
+## De por qué perdonar los errores de los metereólogos, y por qué siempre los cometerán. 
 
 Me resistía a poner la palabra caos en el título para no dar imagen de desordenado. Tampoco me parecía bien usar el término sin haberlo definido previamente. 
 Vamos a hacer un viaje sobre la fauna de los sistemas no lineales viendo algunos de los ejemplos más representativos. Algunos de ellos se han quedado en el tintero, en algún sitio tendriamos que terminar. 
