@@ -7,10 +7,7 @@
 
 En esta foto vemos los dos tipos de movimiento. Por un lado tenemos el movimiento regular de lo y Europa alrededor de Júpiter. Por otro lado la Gran Mancha Roja, un enorme remolino, que presenta movimiento turbulento, típicamente caótico. 
 
-![Dedicatoria "para mis Papis"](./images/dedicatoria.jpg)
-
-<img src=./images/dedicatoria.jpg  width="400">
-
+![Dedicatoria "para mis Papis"](./images/dedicatoria_peque.jpg)
 
 ## De por qué perdonar los errores de los metereólogos, y por qué siempre los cometerán. 
 
