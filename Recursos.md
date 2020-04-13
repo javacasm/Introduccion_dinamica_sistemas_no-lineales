@@ -8,6 +8,10 @@
 
 [greek letters](https://github.com/atom-community/markdown-preview-plus/issues/336)
 
+[latex](https://www.overleaf.com/learn/latex/Spacing_in_math_mode)
+
+[Markdown inside jupyter notebook](https://github.com/jupyter/notebook/blob/master/docs/source/examples/Notebook/Working%20With%20Markdown%20Cells.ipynb)
+
 ### Lorenz
 
 [3D Lorenz Atractor](http://www.malinc.se/m/Lorenz.php)
