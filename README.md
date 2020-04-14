@@ -9,7 +9,7 @@ En esta foto vemos los dos tipos de movimiento. Por un lado tenemos el movimient
 
 ![Dedicatoria "para mis Papis"](./images/dedicatoria_peque.jpg)
 
-# [Introducción a la dinámica de los sistemas no-lineales](./Introduccion_dinamica_sistemas_no-lineales.md)
+# [Introducción a la dinámica de los sistemas no-lineales](./Introduccion_dinamica_sistemas_no-lineales.ipynb)
 
 ## José Antonio Vacas Martínez @javacasm
 
