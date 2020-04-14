@@ -12,6 +12,8 @@
 
 [Markdown inside jupyter notebook](https://github.com/jupyter/notebook/blob/master/docs/source/examples/Notebook/Working%20With%20Markdown%20Cells.ipynb)
 
+[Latex symbols](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
+
 ### Lorenz
 
 [3D Lorenz Atractor](http://www.malinc.se/m/Lorenz.php)
