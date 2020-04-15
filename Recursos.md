@@ -23,7 +23,9 @@
 
 [Mandelbrot set](http://www.malinc.se/m/Mandelbrot.php)
 
+### Ejemplos
 
+[Doble péndulo](https://twitter.com/FECYT_Ciencia/status/1249667664596873216)
 
 ### Drawing with python
 
